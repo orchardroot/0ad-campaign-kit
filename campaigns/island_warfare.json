@@ -1,0 +1,63 @@
+{
+	"Name": "Admiral's Course — Island Warfare",
+	"Description": "A seven-mission course in ship-centric island warfare, from your first dock to ruling an archipelago. Each mission teaches one naval skill and unlocks the next. Missions open the game-setup screen with the map locked in: set the AI difficulty the mission asks for (the description tells you), pick your civilization, then press Start Game. Athens and Carthage are the strongest fleets for beginners.",
+	"Levels": {
+		"harbour_sandbox": {
+			"Name": "01 — Harbour Sandbox",
+			"Map": "skirmishes/cycladic_archipelago_2p.xml",
+			"MapType": "skirmish",
+			"Description": "A pressure-free harbour. In setup, set the AI to Sandbox — it will sit on its island and do nothing. Your drill: build a dock, train five fishing boats onto the shoals, then build one of each warship and learn what they do (arrow ships whittle, ramming ships sink, siege ships bombard the shore). Finish by loading ten soldiers into a transport, landing them on the empty side of the AI's island, and bringing them home again. Leave whenever you're done — attack the idle AI first if you want the win recorded.",
+			"useGameSetup": true
+		},
+		"fishing_fleet": {
+			"Name": "02 — The Fishing Fleet",
+			"Map": "skirmishes/golden_island_2p.xml",
+			"MapType": "skirmish",
+			"Description": "Economy afloat. AI on Sandbox again (or Very Easy if you want mild company). Run your island on the sea: most food from fishing boats, and once you have two docks — or a dock plus an allied or distant one — set merchant ships on a trade route between them for a steady trickle of metal. Target: 100 population and City Phase powered mainly by fish and trade. Then build a fleet and clear the enemy island at your leisure.",
+			"Requires": "harbour_sandbox",
+			"useGameSetup": true
+		},
+		"crossing": {
+			"Name": "03 — The Crossing: Migration",
+			"Map": "random/migration",
+			"MapType": "random",
+			"Description": "The classic migration map: you start on a tiny island that cannot sustain a city, and must ferry your whole civilization to the fertile mainland. AI on Very Easy. Lessons: fish to survive the early minutes, scout the coastline for a safe landing spot, and move in waves — women and soldiers first to build a new Civic Center, then everyone else. Don't dawdle; your starting island runs dry.",
+			"Requires": "fishing_fleet",
+			"useGameSetup": true
+		},
+		"rule_the_waves": {
+			"Name": "04 — Rule the Waves",
+			"Map": "skirmishes/sporades_islands_2p.xml",
+			"MapType": "skirmish",
+			"Description": "Your first real sea war, AI on Very Easy. The rule of island maps: whoever loses the sea loses the game. Build two docks (they can repair ships and fire arrows when garrisoned), keep a standing patrol of arrow ships, and sink the enemy's fishing boats and transports on sight. Once nothing enemy floats, blockade their harbour, then land your army wherever you please. Replay on Easy before moving on.",
+			"Requires": "crossing",
+			"useGameSetup": true
+		},
+		"hold_the_beach": {
+			"Name": "05 — Hold the Beach",
+			"Map": "skirmishes/northern_island_2p.xml",
+			"MapType": "skirmish",
+			"Description": "Now defend. AI on Easy this time — let it come to you. Buildings win beach fights: towers over every likely landing spot, a garrisoned dock as a floating bastion, and your warships intercepting loaded transports before they touch sand (a sunk transport drowns everyone aboard — brutal, but it's them or you). Weather two or three landings, counting your kills, then counter-attack and finish it.",
+			"Requires": "rule_the_waves",
+			"useGameSetup": true
+		},
+		"the_landing": {
+			"Name": "06 — The Landing: Corsica and Sardinia",
+			"Map": "skirmishes/corsica_and_sardinia_4p.xml",
+			"MapType": "skirmish",
+			"Description": "Amphibious assault with an ally. In setup, put yourself and one AI on Team 1, the other two AIs on Team 2 — allies Very Easy or Easy, enemies Very Easy. The lesson is the combined-arms landing: sweep the strait with warships first, bombard shore defences with siege ships, then escort your transports in and land where the enemy isn't. Keep an eye on your ally's island; sail over and help if they're raided.",
+			"Requires": "hold_the_beach",
+			"useGameSetup": true
+		},
+		"admirals_exam": {
+			"Name": "07 — Admiral's Exam: Archipelago",
+			"Map": "random/archipelago",
+			"MapType": "random",
+			"Description": "Graduation. Set three players (you plus two AIs on Easy, free-for-all), any biome you fancy. No special rules — use the whole course: a fishing economy, sea control before expansion, towers on your beaches, and decisive combined landings. When you win this comfortably, you're an admiral: try more players, Medium difficulty, or the epic 8-player Aegean Archipelago from Community Maps 2 in normal match setup.",
+			"Requires": "the_landing",
+			"useGameSetup": true
+		}
+	},
+	"Order": ["harbour_sandbox", "fishing_fleet", "crossing", "rule_the_waves", "hold_the_beach", "the_landing", "admirals_exam"],
+	"ShowUnavailable": true
+}
