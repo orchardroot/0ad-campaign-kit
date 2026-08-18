@@ -1,29 +1,71 @@
-# 0 A.D. Island Warfare — naval campaigns
+# 0ad-island-warfare
 
-Four custom campaigns for [0 A.D.](https://play0ad.com) Release 28 "Boiorix", all ship-centric island warfare with one nation per island — plus a cheat-sheet of every good naval map with relaxed-game settings.
+Four home-made campaigns for [0 A.D.](https://play0ad.com) Release 28 "Boiorix", all built on one stubborn conviction: the best way to play a real-time strategy game is from a boat.
 
-## What's here
+I'm a new-ish 0 A.D. player who kept picking the island maps, kept losing the sea, and kept wishing the game had a course that taught naval play instead of hoping you'd work it out under fire. So I wrote one. Then three more. Every mission puts each nation on its own island — nothing reaches you that didn't sail — and each level teaches exactly one idea before it unlocks the next.
 
-- **`campaigns/island_warfare.json`** — the Admiral's Course campaign. Seven gated missions, each teaching one naval skill:
-  1. **Harbour Sandbox** — docks, fishing, warship types, transports (zero pressure)
-  2. **The Fishing Fleet** — running an economy on fish and sea trade
-  3. **The Crossing** — migration: ferry your civilization to a new home
-  4. **Rule the Waves** — winning sea control
-  5. **Hold the Beach** — defending against amphibious assault
-  6. **The Landing** — combined-arms landings with an AI ally
-  7. **Admiral's Exam** — free-for-all archipelago graduation
-- **`campaigns/island_nations.json`** — **Island Nations — One Nation, One Island**. Eight gated missions on one-island-per-player random maps, ramping from Easy to Medium AI:
-  1. **One Island Each** (Islands) — colonise a second island
-  2. **The Cyclades** — mining outposts on empty islets
-  3. **The Aegean Divide** — forward naval bases on mid-sea islands
-  4. **Three Kings** (Islands, 3-way FFA) — free-for-all patience
-  5. **The Searocks** (Snowflake Searocks, 2v2) — defend the fords, win at sea
-  6. **Harbour Wars** (Harbor) — first Medium duel
-  7. **Corsica against Sardinia** — picking the right beach
-  8. **Thalassocracy** (Archipelago, 4-way FFA) — the exam
-- **`campaigns/sea_powers.json`** — **Sea Powers — Wars of the Islands**. Seven open (ungated) historical matchups, one nation per island: Salamis (Athens vs Persia), the Peloponnesian War (Athens vs Sparta + Macedon), Tyre (Macedon vs Persia), the Balearics (Carthage vs Iberians), the Punic War for Corsica (Carthage vs Rome), Cyprus (Ptolemies vs Seleucids) and Britannia (Britons vs Rome).
-- **`campaigns/iron_admiral.json`** — **Iron Admiral — Community Maps**. Six gated Medium-AI missions on [Community Maps 2](https://mod.io/g/0ad/m/community-maps-2) maps: Coastline, Volcanic Island, Northern Islands (2v2), Caribbean Island (3v3), Rapa Nui, and the eight-player Aegean Archipelago finale. Requires the CM2 mod to be enabled.
-- **`docs/island-maps-cheatsheet.md`** — every naval map available (vanilla + Community Maps 2), with settings recipes for easy games.
+Also here: a cheat-sheet of every naval map I've found (vanilla + mods), with the settings for a game you can play with a cup of tea in the other hand.
+
+## The campaigns
+
+| Campaign | Missions | Difficulty | What it teaches |
+|---|---|---|---|
+| **Admiral's Course — Island Warfare** | 7, gated | Sandbox → Easy | The basics: docks, fishing, warship types, migration, sea control, beach defence, landings, and a free-for-all exam |
+| **Island Nations — One Nation, One Island** | 8, gated | Easy → Medium | Island empire-building: colonising empty islands, mining outposts, forward naval bases, FFA patience, wadeable fords, harbours, choosing your beach, and a four-way archipelago exam |
+| **Sea Powers — Wars of the Islands** | 7, open | Easy / Medium | Historical matchups on island maps, play in any order: Salamis, the Peloponnesian War, Tyre, the Balearics, the Punic War for Corsica, Cyprus, Britannia |
+| **Iron Admiral — Community Maps** | 6, gated | Medium | The big maps from [Community Maps 2](https://mod.io/g/0ad/m/community-maps-2): raiding, two-front wars, 3v3, Rapa Nui, and an eight-player Aegean finale |
+
+Suggested order: Admiral's Course → Island Nations → Iron Admiral, with Sea Powers whenever you fancy a story. Iron Admiral needs the free Community Maps 2 mod enabled; everything else is vanilla.
+
+### Mission lists
+
+<details>
+<summary><b>Admiral's Course</b> (<code>campaigns/island_warfare.json</code>)</summary>
+
+1. **Harbour Sandbox** — docks, fishing, warship types, transports (zero pressure)
+2. **The Fishing Fleet** — running an economy on fish and sea trade
+3. **The Crossing** — migration: ferry your civilisation to a new home
+4. **Rule the Waves** — winning sea control
+5. **Hold the Beach** — defending against amphibious assault
+6. **The Landing** — combined-arms landings with an AI ally
+7. **Admiral's Exam** — free-for-all archipelago graduation
+</details>
+
+<details>
+<summary><b>Island Nations</b> (<code>campaigns/island_nations.json</code>)</summary>
+
+1. **One Island Each** (Islands) — colonise a second island
+2. **The Cyclades** — mining outposts on empty islets
+3. **The Aegean Divide** — forward naval bases on mid-sea islands
+4. **Three Kings** (Islands, 3-way FFA) — let the AIs bleed each other first
+5. **The Searocks** (Snowflake Searocks, 2v2) — defend the fords, win at sea
+6. **Harbour Wars** (Harbor) — first Medium duel
+7. **Corsica against Sardinia** — picking the right beach
+8. **Thalassocracy** (Archipelago, 4-way FFA) — the exam
+</details>
+
+<details>
+<summary><b>Sea Powers</b> (<code>campaigns/sea_powers.json</code>)</summary>
+
+- **Salamis, 480 BC** — Athens vs Persia (Aegean Sea)
+- **Peloponnesian War, 431 BC** — Athens vs Sparta + Macedon (Cycladic Archipelago 3p)
+- **Tyre, 332 BC** — Macedon vs Persia (Islands)
+- **The Balearics, 240 BC** — Carthage vs Iberians (Islands)
+- **Punic War, 259 BC** — Carthage vs Rome (Corsica)
+- **Cyprus, 306 BC** — Ptolemies vs Seleucids (Harbor)
+- **Britannia, 55 BC** — Britons vs Rome (Northern Island)
+</details>
+
+<details>
+<summary><b>Iron Admiral</b> (<code>campaigns/iron_admiral.json</code>)</summary>
+
+1. **Coastline: The Raiders** — long shore, little wood, constant raiding
+2. **Volcanic Island** — the two-fleet system
+3. **Northern Islands: Two Fronts** (2v2) — a land border *and* a sea war
+4. **Caribbean Island** (3v3) — hold the mountain, be the team's navy
+5. **Rapa Nui: King of the Sea** — flank the fort by boat
+6. **Aegean Archipelago: The Great War** (4v4, 8 players) — the finale
+</details>
 
 ## Install
 
@@ -34,13 +76,22 @@ mkdir -p ~/Library/Application\ Support/0ad/mods/user/campaigns
 cp campaigns/*.json ~/Library/Application\ Support/0ad/mods/user/campaigns/
 ```
 
-(On Linux: `~/.local/share/0ad/mods/user/campaigns/`.)
+(Linux: `~/.local/share/0ad/mods/user/campaigns/`.) They then appear under **Single-player → Campaigns → New**.
 
-They then appear under **Single-player → Campaigns → New**.
+## How the missions work
 
-Suggested order: Admiral's Course → Island Nations → Sea Powers (any time) → Iron Admiral. Iron Admiral (and level 7's epilogue suggestion in Admiral's Course) needs the free [Community Maps 2](https://mod.io/g/0ad/m/community-maps-2) mod enabled; everything else is vanilla.
+Every mission opens the normal game-setup screen with the map locked in, and the mission description tells you the player count, teams and AI difficulty to set. That's deliberate, and also unavoidable: the campaign menu can only hand the setup screen a map, not players or AI, and scenario maps launched directly from a campaign get no AI at all. The upside is you choose the difficulty per attempt — start soft, replay harder. Progress still records because the campaign data rides along as a game-settings attribute.
 
-## Design notes
+Gating uses `Requires`, with `ShowUnavailable` so you can see the whole course from the start and know what you're working towards.
 
-- Missions use `useGameSetup: true`, which opens the match-setup screen with the map locked in. This is deliberate: campaign-launched scenario maps get no AI assigned otherwise, and it lets the player set AI difficulty per attempt (start Very Easy, replay harder). Campaign progress still records because `campaignData` rides along as a game-settings attribute.
-- Mission gating uses `Requires`, with `ShowUnavailable` so the whole course is visible from the start.
+## The cheat-sheet
+
+[`docs/island-maps-cheatsheet.md`](docs/island-maps-cheatsheet.md) — every ship-friendly map in vanilla 0 A.D. and the mod.io map packs, which campaign missions use them, and settings recipes ranging from "totally chill boat-building afternoon" to "eight players, let chaos reign".
+
+## Contributing
+
+If you know a good island map I've missed, or a mission that would teach something these don't, open an issue or a PR. Campaign files are plain JSON — the hardest part is the prose.
+
+---
+
+*orchardroot — made in Cheshire, a long way from the sea, under the supervision of two cats.*
