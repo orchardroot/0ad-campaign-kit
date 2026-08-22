@@ -1,0 +1,111 @@
+{
+	"Name": "Boot Camp — Learning the Ropes",
+	"Description": "A ten-mission training course for new players. Each mission teaches one skill — economy, fighting, defending, booming, naval war — and unlocks the next. Combat missions open the game-setup screen first: leave everything alone except AI difficulty (start on Very Easy, move up when you win comfortably), then press Start Game.",
+	"Levels": {
+		"intro": {
+			"Name": "01 — Basic Training",
+			"Map": "tutorials/introductory_tutorial.xml",
+			"MapType": "scenario",
+			"Description": "The built-in interactive tutorial. Follow the on-screen instructions to learn moving units, gathering, building, and training. Key habits to take away: your Civic Center should almost never sit idle (keep training women), and press the period key ( . ) to find idle workers.",
+			"Preview": "Introductory_Tutorial.png"
+		},
+		"economy": {
+			"Name": "02 — Feeding the War Machine",
+			"Map": "tutorials/starting_economy_walkthrough.xml",
+			"MapType": "scenario",
+			"Description": "A guided walkthrough of a strong opening build order. It moves fast — expect to restart it two or three times; that repetition is the point. Everything in 0 A.D. flows from a good first five minutes: women on food, men on wood, houses before you hit the population cap.",
+			"Requires": "intro"
+		},
+		"sandbox": {
+			"Name": "Playground — Sandbox (optional)",
+			"Map": "scenarios/sandbox_romans.xml",
+			"MapType": "scenario",
+			"Description": "A pressure-free playground showcasing the Roman civilization. There is no enemy and no victory condition, so this mission never shows as 'complete' — explore the buildings, phase up, try siege engines, then leave via Menu > Exit. Come back here any time you want to test something without being attacked."
+		},
+		"first_command": {
+			"Name": "03 — First Command: Miletus",
+			"Map": "scenarios/miletus.xml",
+			"MapType": "scenario",
+			"Description": "Your first real fight: you lead Athens against a Roman AI on a small map. In the setup screen, set the AI to Very Easy and Defensive if available. Plan: build your economy for ten minutes exactly as the walkthrough taught you, reach Town Phase, train a mixed army of about 20 (spearmen plus ranged), then attack. Shift-click a portrait to train a batch of 5 at once.",
+			"Requires": "economy",
+			"useGameSetup": true
+		},
+		"duel": {
+			"Name": "04 — The Duel: Corinthian Isthmus",
+			"Map": "skirmishes/corinthian_isthmus_2p.xml",
+			"MapType": "skirmish",
+			"Description": "The classic 1v1 land map — a narrow isthmus between two seas. Pick any civilization you fancy (Spartans and Romans are straightforward), AI on Very Easy. The narrow center is a natural chokepoint: drop a couple of towers or a fortress there and fight where the land is thinnest. Win here, then replay on Easy before moving on.",
+			"Requires": "first_command",
+			"useGameSetup": true,
+			"Preview": "isthmus_scenario.png"
+		},
+		"hold_the_line": {
+			"Name": "05 — This Is Sparta: Laconia",
+			"Map": "scenarios/laconia.xml",
+			"MapType": "scenario",
+			"Description": "Defense under pressure. The Spartans have just lost a battle and the Macedonians are coming — you must rebuild an army before they overrun the valley. Lesson: buildings are weapons. Garrison women in houses or the Civic Center when raided, put soldiers in towers, and remember Spartan hoplites are among the best melee infantry in the game.",
+			"Requires": "duel",
+			"useGameSetup": true,
+			"Preview": "laconia_1.png"
+		},
+		"boom": {
+			"Name": "06 — The Boom: Median Oasis",
+			"Map": "skirmishes/median_oasis_2p.xml",
+			"MapType": "skirmish",
+			"Description": "A resource-rich oasis map. Special rule for this mission: do not attack before the 15-minute mark. Instead 'boom' — grow to 60+ workers, reach City Phase, research economy technologies at the farmstead and storehouse, then crush the enemy with an overwhelming army. Learning to boom beats learning to fight; the bigger economy almost always wins.",
+			"Requires": "duel",
+			"useGameSetup": true,
+			"Preview": "median_oasis_1v1.png"
+		},
+		"aggression": {
+			"Name": "07 — The Sack of Delphi",
+			"Map": "scenarios/the_massacre_of_delphi.xml",
+			"MapType": "scenario",
+			"Description": "Now you are the invader: lead the Gauls into Greece and sack Delphi. Opposite lesson to the last mission — attack early and keep attacking. Raid enemy women workers with fast units, retreat when soldiers arrive, and strike somewhere else. An enemy who can't gather can't fight. Gauls have cheap, fast infantry perfect for this.",
+			"Requires": "boom",
+			"useGameSetup": true,
+			"Preview": "massacre_of_delphi.png"
+		},
+		"naval": {
+			"Name": "08 — Wooden Walls: Cycladic Archipelago",
+			"Map": "skirmishes/cycladic_archipelago_2p.xml",
+			"MapType": "skirmish",
+			"Description": "Island warfare in the Aegean. You'll need a dock early, warships to control the water, and transports to land your army on the enemy island. Athens or Carthage are the strongest naval picks. Watch your wood: ships are expensive, and whoever loses the sea usually loses the game. Fishing boats are also a superb food source here.",
+			"Requires": "aggression",
+			"useGameSetup": true,
+			"Preview": "cycladic_archipelago_2.png"
+		},
+		"graduation": {
+			"Name": "09 — Graduation: The Persian Gates",
+			"Map": "scenarios/the_persian_gates.xml",
+			"MapType": "scenario",
+			"Description": "Alexander the Great pushes through the mountain pass of Persis while Ariobarzanes defends. You play Alexander with an AI ally (Krateros) against two Persian players — your first team game. New skill: keep an eye on your ally, fight where they fight, and use the Diplomacy panel to send resources via tribute if they're struggling. Win this and you've learned the ropes.",
+			"Requires": "naval",
+			"Preview": "the_persian_gates.png",
+			"useGameSetup": true
+		},
+		"finale": {
+			"Name": "10 — Final Exam: rematch on Easy+",
+			"Map": "skirmishes/corinthian_isthmus_2p.xml",
+			"MapType": "skirmish",
+			"Description": "Back to where your first duel was fought — but this time set the AI to Easy or Medium, and no special rules. Use everything: a clean opening build, a boom into City Phase, towers at the chokepoint, raids on their workers, and a decisive final push with siege engines against their Civic Center. When you beat Medium here, you're ready for the Great Battles campaign.",
+			"Requires": "graduation",
+			"useGameSetup": true,
+			"Preview": "isthmus_scenario.png"
+		}
+	},
+	"Order": [
+		"intro",
+		"economy",
+		"sandbox",
+		"first_command",
+		"duel",
+		"hold_the_line",
+		"boom",
+		"aggression",
+		"naval",
+		"graduation",
+		"finale"
+	],
+	"ShowUnavailable": true
+}

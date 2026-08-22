@@ -1,6 +1,6 @@
 # 0ad-island-warfare
 
-Four home-made campaigns for [0 A.D.](https://play0ad.com) Release 28 "Boiorix", all built on one stubborn conviction: the best way to play a real-time strategy game is from a boat.
+Six home-made campaigns for [0 A.D.](https://play0ad.com) Release 28 "Boiorix", four of them built on one stubborn conviction: the best way to play a real-time strategy game is from a boat.
 
 I'm a new-ish 0 A.D. player who kept picking the island maps, kept losing the sea, and kept wishing the game had a course that taught naval play instead of hoping you'd work it out under fire. So I wrote one. Then three more. Every mission puts each nation on its own island — nothing reaches you that didn't sail — and each level teaches exactly one idea before it unlocks the next.
 
@@ -66,6 +66,15 @@ Suggested order: Admiral's Course → Island Nations → Iron Admiral, with Sea 
 5. **Rapa Nui: King of the Sea** — flank the fort by boat
 6. **Aegean Archipelago: The Great War** (4v4, 8 players) — the finale
 </details>
+
+## Also in here: two land campaigns
+
+Before the boats, there were these. They live in the same folder because they live in the same `user` mod, and because a campaign that only exists on one Mac is a campaign waiting to be lost.
+
+- **Boot Camp — Learning the Ropes** (`campaigns/bootcamp.json`) — eleven missions, gated. Starts with the two built-in tutorials, then a Roman sandbox, then a slow climb through first command, a duel, a siege defence, booming, aggression, a naval detour and a graduation. What I wish I'd been handed on day one.
+- **Great Battles of Antiquity** (`campaigns/great_battles.json`) — five hand-made scenarios from the base game, playable in any order: the Tiber, the Third Macedonian War, Migration, Death Canyon, Gold Rush.
+
+Neither needs a mod. Both are dry land, and I'm told some people prefer it.
 
 ## Install
 

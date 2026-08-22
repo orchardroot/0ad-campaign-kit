@@ -1,0 +1,54 @@
+{
+	"Name": "Great Battles of Antiquity",
+	"Description": "Five hand-crafted historical scenarios, playable in any order — good practice once you've been through Boot Camp. Each opens the game-setup screen: set AI difficulty to taste (Easy is a fair fight for a new player) and press Start Game.",
+	"Levels": {
+		"tiber": {
+			"Name": "Battle for the Tiber",
+			"Map": "scenarios/battle_for_the_tiber.xml",
+			"MapType": "scenario",
+			"Description": "Rome against the Etruscan city of Veii for control of the Tiber basin — while Gallic invaders prowl the map. Three enemies, one you. Turtle up early, then take them apart one at a time. The hardest fight in this set.",
+			"Preview": "battle_for_the_tiber.png",
+			"useGameSetup": true
+		},
+		"macedon": {
+			"Name": "Third Macedonian War",
+			"Map": "scenarios/third_macedonian_war.xml",
+			"MapType": "scenario",
+			"Description": "Rome encroaches on Macedon for the third and final time. You are Lucius Aemilius Paullus; Perseus of Macedon stands against you, and Greek allies complicate the field. Historically this ended the Antigonid dynasty at Pydna in 168 BC — see if you can repeat it.",
+			"Preview": "third_macedonian_war.png",
+			"useGameSetup": true
+		},
+		"migration": {
+			"Name": "Migration",
+			"Map": "scenarios/migration.xml",
+			"MapType": "scenario",
+			"Description": "You start on a small island with almost nothing, off the coast of a rich mainland. Ferry your people across, claim a foothold, and outgrow your rivals. A lesson in expansion: the map's resources belong to whoever takes them first.",
+			"Preview": "migration_scenario.png",
+			"useGameSetup": true
+		},
+		"death_canyon": {
+			"Name": "Death Canyon — Invasion Force",
+			"Map": "scenarios/death_canyon_invasion_force.xml",
+			"MapType": "scenario",
+			"Description": "A deep rocky canyon slicing through the desert, 2v2 with a twist: one player on each team has a base, the other starts with only a large army. Great for practicing army control — formations, focus fire, and picking the right fights.",
+			"Preview": "death_canyon_invasion_force.png",
+			"useGameSetup": true
+		},
+		"gold_rush": {
+			"Name": "Gold Rush",
+			"Map": "scenarios/gold_rush.xml",
+			"MapType": "scenario",
+			"Description": "Four players around a central rocky region rich in metal — the resource that pays for champions, siege, and technologies. Whoever controls the middle wins the late game. Practice map control: expand toward the metal early and hold it with towers.",
+			"Preview": "gold_rush.png",
+			"useGameSetup": true
+		}
+	},
+	"Order": [
+		"migration",
+		"gold_rush",
+		"death_canyon",
+		"macedon",
+		"tiber"
+	],
+	"ShowUnavailable": true
+}
