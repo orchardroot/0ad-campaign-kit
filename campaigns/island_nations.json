@@ -7,8 +7,7 @@
 			"Map": "random/islands",
 			"MapType": "random",
 			"Description": "The purest island map: every player gets a small home island, with many empty islands scattered around. Setup: 2 players, AI Easy, map size Medium. Your island cannot feed a city forever, so the lesson is claiming land by sea. Fish hard, reach Town Phase, then ship a builder party to the nearest empty island and raise a second Civic Center there. Two islands, two docks, one navy — and then go find the enemy's island and take it.",
-			"useGameSetup": true,
-			"Preview": "islands.png"
+			"useGameSetup": true
 		},
 		"the_cyclades": {
 			"Name": "02 — The Cyclades",
@@ -16,8 +15,7 @@
 			"MapType": "random",
 			"Description": "An Aegean scatter of small dry islands, one home island per player. Setup: 2 players, AI Easy. Home islands are poor in stone and metal, so the mines on the little uninhabited islands are the prize. Practise the resource raid: transport ten workers plus a few soldiers to a mining islet, build a storehouse and a tower, and ferry the metal home. Hold two or three such outposts and the enemy will starve of metal long before you do.",
 			"Requires": "one_island_each",
-			"useGameSetup": true,
-			"Preview": "cycladic_archipelago.png"
+			"useGameSetup": true
 		},
 		"aegean_divide": {
 			"Name": "03 — The Aegean Divide",
@@ -25,8 +23,7 @@
 			"MapType": "random",
 			"Description": "Two big home shores face each other across a sea of scattered islands. Setup: 2 players, AI Easy. The mid-sea islands are stepping stones: fortify one with a dock and towers as a forward naval base, so damaged ships repair near the front and your transports have a safe halfway harbour. Whoever owns the middle islands owns the sea lanes. Bonus drill: run merchant ships between your home dock and your forward dock for metal.",
 			"Requires": "the_cyclades",
-			"useGameSetup": true,
-			"Preview": "aegean_sea.png"
+			"useGameSetup": true
 		},
 		"three_kings": {
 			"Name": "04 — Three Kings",
@@ -34,8 +31,7 @@
 			"MapType": "random",
 			"Description": "Three islands, three nations, no friends. Setup: 3 players, no teams, both AIs Easy, map size Medium or Normal. The free-for-all lesson: do not be the first to fight. Turtle your beaches with towers, keep a patrol fleet, and watch which two AIs go to war. When one is bloodied, strike its harbour with everything, take its island, and use the doubled economy to crush the last king. Patience wins island free-for-alls.",
 			"Requires": "aegean_divide",
-			"useGameSetup": true,
-			"Preview": "islands.png"
+			"useGameSetup": true
 		},
 		"the_searocks": {
 			"Name": "05 — The Searocks",
@@ -43,8 +39,7 @@
 			"MapType": "random",
 			"Description": "A snowflake of small islands linked by narrow shallow passages that infantry can wade — so this is the one map where a land attack can reach you without a boat. Setup: 4 players, teams of two (you and one AI ally vs two AIs), allies and enemies on Easy; go Medium if it feels light. Tower and wall the fords onto your island, then win with the fleet the enemy is not building: their island has beaches too, and their army will be busy at the passages.",
 			"Requires": "three_kings",
-			"useGameSetup": true,
-			"Preview": "snowflake_searocks.png"
+			"useGameSetup": true
 		},
 		"harbour_wars": {
 			"Name": "06 — Harbour Wars",
@@ -52,8 +47,7 @@
 			"MapType": "random",
 			"Description": "Every nation starts inside a sheltered harbour behind cliffs, with only narrow passes to the outside and rich fishing in the open ocean. Setup: 2 players, AI Medium — your first Medium duel. Wall or tower your passes early (the AI will try them), then take the fight to sea: your fishing fleet must work the deep water outside the harbour, so escort it, and sink the enemy's boats when they come out to fish. Starve them, then sail into their harbour with siege ships.",
 			"Requires": "the_searocks",
-			"useGameSetup": true,
-			"Preview": "harbor.png"
+			"useGameSetup": true
 		},
 		"corsica": {
 			"Name": "07 — Corsica against Sardinia",
@@ -61,8 +55,7 @@
 			"MapType": "random",
 			"Description": "Two large, jagged islands facing each other; the coasts are so broken that landing is hard and choosing the right beach is everything. Setup: 2 players, AI Medium. Scout the enemy coastline with a fast ship before you attack and find the beach with no towers on it. Land your siege there, not under their walls, and march overland to their city while your warships hold the strait. Defend your own coast the same way: towers on the good beaches, patrols on the bad.",
 			"Requires": "harbour_wars",
-			"useGameSetup": true,
-			"Preview": "corsica.png"
+			"useGameSetup": true
 		},
 		"thalassocracy": {
 			"Name": "08 — Thalassocracy",
@@ -70,8 +63,7 @@
 			"MapType": "random",
 			"Description": "The final exam: a maze of islands of every shape, and four nations that each want to rule the sea. Setup: 4 players, no teams, AIs Medium (or one Medium and two Easy for a softer first attempt), map size Normal. Use the whole course — colonise early, mine the small islands, hold the central lanes with a forward base, let rivals bleed each other, and land where the towers are not. Win this and you are a thalassocrat. Then try Hard, or five players.",
 			"Requires": "corsica",
-			"useGameSetup": true,
-			"Preview": "archipelago.png"
+			"useGameSetup": true
 		}
 	},
 	"Order": [

@@ -6,15 +6,13 @@
 			"Name": "01 — The Norse Sandbox",
 			"Map": "scenarios/sandbox_norse.xml",
 			"MapType": "scenario",
-			"Description": "No opponents, no timer, no AI. Launched straight from here, so there is nothing to configure.\n\nMillennium A.D. moves the whole game forward roughly a thousand years, to AD 500–1000. Six factions, none of which you have ever played: Norse, Anglo-Saxons, Byzantines, Carolingians, Rus and Umayyads. The units are different, the buildings are different, and the roster you know is gone.\n\nBuild a Norse settlement badly and at leisure. Click on everything. This is the only mission in the course where nobody is coming.",
-			"Preview": "sandbox-thebritons.png"
+			"Description": "No opponents, no timer, no AI. Launched straight from here, so there is nothing to configure.\n\nMillennium A.D. moves the whole game forward roughly a thousand years, to AD 500–1000. Six factions, none of which you have ever played: Norse, Anglo-Saxons, Byzantines, Carolingians, Rus and Umayyads. The units are different, the buildings are different, and the roster you know is gone.\n\nBuild a Norse settlement badly and at leisure. Click on everything. This is the only mission in the course where nobody is coming."
 		},
 		"fjords": {
 			"Name": "02 — Norse: The Fjords",
 			"Map": "skirmishes/fjords_2p.xml",
 			"MapType": "skirmish",
 			"Description": "2 players. AI difficulty: Very Easy.\n\nPlay the Norse, obviously. Narrow fjords and coastal inlets, which means naval movement matters and the shoreline is contested by default.\n\nEverything you learned in the Admiral's Course applies here in spirit — control the water, land where they aren't — but with longships instead of triremes. A gentle re-entry into a sea you don't know.",
-			"Preview": "fjords.png",
 			"Requires": "sandbox",
 			"useGameSetup": true
 		},
@@ -23,7 +21,6 @@
 			"Map": "skirmishes/britannic_road_2p.xml",
 			"MapType": "skirmish",
 			"Description": "2 players. AI difficulty: Very Easy, then Easy on the replay.\n\nCentral Britannia: a Roman road bisects the valley, oak forest and lakes on either side. The empire that built the road is centuries gone, which is rather the point of this mod.\n\nPlay the Anglo-Saxons. Learn one faction properly per mission rather than sampling all six and knowing none — this is the first of the six, and the most straightforward.",
-			"Preview": "britannic_road.png",
 			"Requires": "fjords",
 			"useGameSetup": true
 		},
@@ -32,7 +29,6 @@
 			"Map": "skirmishes/outpost_3p.xml",
 			"MapType": "skirmish",
 			"Description": "3 players, free-for-all. AI difficulty: Easy.\n\nAn outpost on the edge of the Empire — the last line of defence against foreign invasion and tribal raiding. Play the Byzantines, who are the closest thing this mod has to a state with institutions.\n\nThree-way free-for-all, so let the other two find each other first. Fortify, hold, and take the map when they've spent themselves on each other.",
-			"Preview": "outpost.png",
 			"Requires": "britannic",
 			"useGameSetup": true
 		},
@@ -41,7 +37,6 @@
 			"Map": "skirmishes/gallic_fields_3p.xml",
 			"MapType": "skirmish",
 			"Description": "3 players, free-for-all. AI difficulty: Easy.\n\nEvery player starts with a wooden palisade and guard towers already standing, and treacherous neighbours on both sides. Play the Carolingians.\n\nA defensive opening handed to you free. The lesson is what you do with the time it buys — a palisade is an excuse to boom behind it, not a reason to sit still. If you finish this game with the same economy you started it with, you got the mission wrong even if you won.",
-			"Preview": "gallic_fields.png",
 			"Requires": "outpost",
 			"useGameSetup": true
 		},
@@ -50,7 +45,6 @@
 			"Map": "skirmishes/provence_3p.xml",
 			"MapType": "skirmish",
 			"Description": "3 players, free-for-all. AI difficulty: Medium.\n\nSouth-eastern France, between the Alps, the Mediterranean and the Rhône. Play the Umayyads, campaigning a long way from home — which is historically about right for the period.\n\nFirst mission at Medium. The step up from Easy is where the AI stops forgiving a slow opening, so use the build order you've been refining rather than improvising.",
-			"Preview": "provence.png",
 			"Requires": "gallic",
 			"useGameSetup": true
 		},
@@ -59,7 +53,6 @@
 			"Map": "skirmishes/passage_4p.xml",
 			"MapType": "skirmish",
 			"Description": "4 players, free-for-all or 2v2 — your choice. AI difficulty: Medium.\n\nPlains, rolling highlands and a long river. Play the Rus, the last of the six factions and the one whose lands actually look like this.\n\nA river across the middle of a four-player map is a decision about bridges and crossings. Work out where the crossings are in the first five minutes, because you will be defending one of them later.",
-			"Preview": "passage.png",
 			"Requires": "provence",
 			"useGameSetup": true
 		},
@@ -68,7 +61,6 @@
 			"Map": "skirmishes/narrow_passage.xml",
 			"MapType": "skirmish",
 			"Description": "3 players, free-for-all. AI difficulty: Medium.\n\nHigh bluffs over a narrow floor. The map's own description warns you about ambushes, and the good resources are up on the cliffs where they're hard to defend.\n\nFree choice of faction now — you've played all six. Take whichever one you liked most and find out whether you liked it or just found it novel.",
-			"Preview": "ambush.png",
 			"Requires": "passage",
 			"useGameSetup": true
 		},
@@ -77,7 +69,6 @@
 			"Map": "skirmishes/winter_lakes.xml",
 			"MapType": "skirmish",
 			"Description": "4 players, 2v2. AI difficulty: Medium.\n\nSummer has come to the far north and brought the animals with it. Wolves included, so mind your gatherers early.\n\nYour first team game in the mod. Pick a faction that complements your ally's rather than duplicating it, and agree who is taking which flank before anything is built.",
-			"Preview": "winter_lakes.png",
 			"Requires": "narrows",
 			"useGameSetup": true
 		},
@@ -86,7 +77,6 @@
 			"Map": "skirmishes/winter_conflict.xml",
 			"MapType": "skirmish",
 			"Description": "4 players, 2v2 or free-for-all. AI difficulty: Medium, Hard if you've been winning.\n\nHeavy forest, a lake in the middle, resources everywhere. The graduation.\n\nWood is not the constraint here — sight lines are. Armies disappear in this map and reappear somewhere you weren't watching, so scout more than feels reasonable and keep something back. Win this and you know Millennium A.D. as well as you knew vanilla two months ago.",
-			"Preview": "deep_forest.png",
 			"Requires": "winter_lakes",
 			"useGameSetup": true
 		}

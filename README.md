@@ -106,6 +106,8 @@ That works because each level sets `"useGameSetup": true`. It's worth knowing wh
 
 Two other fields are not optional. `Order` must list every level key: the campaign menu sorts with `Order.indexOf(...)` and throws `TypeError: this.run.template.Order is undefined` without it, so the campaign won't open at all. `ShowUnavailable` lets you see the whole course from the start.
 
+Don't set `Preview` on a level at all. It looks like a convenience and it's a trap: the campaign menu builds a GUI sprite from it, and GUI sprites resolve under `art/textures/ui/`, so the value has to be the full `session/icons/mappreview/foo.png` path — *not* the bare `foo.png` that a map's own `settings.Preview` uses. Get it wrong and you get a magenta box. Omit the field entirely and `MapCache.getMapPreview()` reads the map's own declaration, prepends the right directory, and falls back to `nopreview.png`. It's self-maintaining and works for maps from any mod.
+
 One more trap, since campaign names are displayed through the GUI's markup parser: never put square brackets in a campaign or level name. `[...]` is tag syntax, so a `[Vanilla]` prefix throws "Invalid tag" and gets swallowed rather than shown. Round brackets are fine.
 
 Gating uses `Requires`, with `ShowUnavailable` so you can see the whole course from the start and know what you're working towards.

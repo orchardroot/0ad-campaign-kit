@@ -7,8 +7,7 @@
 			"Map": "skirmishes/coastline_2.xml",
 			"MapType": "skirmish",
 			"Description": "A long African shore rich in fish, stone and metal but almost bare of trees. Setup: 2 players, AI Medium. Wood is the bottleneck, so guard your few groves and let the sea feed you. This is a raiding map: the coast is too long to tower everywhere, so keep a fast fleet on patrol and hit the AI's fishing boats and shore gatherers again and again. Whoever loses more workers to raids loses the war.",
-			"useGameSetup": true,
-			"Preview": "coastline.png"
+			"useGameSetup": true
 		},
 		"volcanic_island": {
 			"Name": "02 — Volcanic Island",
@@ -16,8 +15,7 @@
 			"MapType": "random",
 			"Description": "A dramatic volcanic island map. Setup: 2 players, AI Medium, then 3 players free-for-all when you win. High water means every route to the enemy is by sea or along a thin shore. Practise the two-fleet system: a patrol fleet of arrow ships that never leaves home waters, and a strike fleet of rams and siege ships that goes out only when the patrol reports the enemy navy is somewhere else.",
 			"Requires": "coastline",
-			"useGameSetup": true,
-			"Preview": "volcanic_island.png"
+			"useGameSetup": true
 		},
 		"northern_islands": {
 			"Name": "03 — Northern Islands: Two Fronts",
@@ -25,8 +23,7 @@
 			"MapType": "skirmish",
 			"Description": "The cold north: two nations on a mountainous southern island, two on a small northern mainland. Setup: 4 players, teams of two — you and an AI ally vs two AIs, all Medium. Note which players share your island in setup and put your ally next to you, or you will find yourself sharing a shore with the enemy. Two-front lesson: hold the land border with towers and walls, win at sea, and land behind the enemy on the other island.",
 			"Requires": "volcanic_island",
-			"useGameSetup": true,
-			"Preview": "northern_islands.png"
+			"useGameSetup": true
 		},
 		"caribbean": {
 			"Name": "04 — Caribbean Island",
@@ -34,8 +31,7 @@
 			"MapType": "skirmish",
 			"Description": "Six nations around a tropical island with a resource-rich mountain in the middle. Setup: 6 players, teams of three (you and two AI allies vs three), all Medium; or free-for-all if you dare. The mountain's stone and metal decides late games — send a fortified mining expedition and hold it. Keep an eye on the minimap for your allies' islands: a sea power's job in a team is to sink transports before they land anywhere.",
 			"Requires": "northern_islands",
-			"useGameSetup": true,
-			"Preview": "caribbean_island.png"
+			"useGameSetup": true
 		},
 		"rapa_nui": {
 			"Name": "05 — Rapa Nui: King of the Sea",
@@ -43,8 +39,7 @@
 			"MapType": "skirmish",
 			"Description": "Easter Island, with an enemy fort on the great mountain and a friendly trader for each side. Setup: 2 human-or-AI players, AI Medium; leave the extra trader players as they are. The map asks a question — king of the hill or king of the sea? Answer it the admiral's way: own the water, flank by boat, land where the fort's arrows cannot reach, and starve the hill. Visit the moai on the way.",
 			"Requires": "caribbean",
-			"useGameSetup": true,
-			"Preview": "rapa_nui.png"
+			"useGameSetup": true
 		},
 		"aegean_archipelago": {
 			"Name": "06 — Aegean Archipelago: The Great War",
@@ -52,8 +47,7 @@
 			"MapType": "skirmish",
 			"Description": "The finale: eight Greek nations across the whole Aegean, players 1–4 vs players 5–8. Setup: 8 players, two teams of four, all AI Medium, population cap 150 or lower to keep it smooth. Nobody can be everywhere, so pick your role: be the team's navy. Hold the sea lanes between your team's islands, escort allied transports, and sink enemy ones. When your fleet rules the Aegean, land your allies' armies where it hurts most. Win this and there is nothing left to teach you.",
 			"Requires": "rapa_nui",
-			"useGameSetup": true,
-			"Preview": "aegean_archipelago.png"
+			"useGameSetup": true
 		}
 	},
 	"Order": [

@@ -7,56 +7,49 @@
 			"Map": "random/aegean_sea",
 			"MapType": "random",
 			"Description": "The Persian fleet has crossed the Aegean; Athens must win at sea or die. Setup: 2 players, you Athens, AI Persians on Medium. Themistocles' plan: your cheap, fast arrow ships and rams win in numbers, so out-produce Xerxes from two or three docks and fight the big battle in the narrows between the mid-sea islands where numbers count more than quality. Sink the transports before they reach Attica.",
-			"useGameSetup": true,
-			"Preview": "aegean_sea.png"
+			"useGameSetup": true
 		},
 		"peloponnesian_war": {
 			"Name": "Peloponnesian War, 431 BC — Athens vs Sparta and Macedon",
 			"Map": "skirmishes/cycladic_archipelago_3p.xml",
 			"MapType": "skirmish",
 			"Description": "The Delian League against the Peloponnesian League across the Cyclades. Setup: you Athens alone on Team 1, AI Sparta and AI Macedon together on Team 2, both Easy (Medium for a real war). Sparta's strength is on land — never fight hoplites on their beach. Blockade both enemy islands, sink every transport, raid their fishing fleets, and only land once their harbours are empty. This is the war Athens should have won.",
-			"useGameSetup": true,
-			"Preview": "cycladic_archipelago_skirm_3.png"
+			"useGameSetup": true
 		},
 		"tyre": {
 			"Name": "Tyre, 332 BC — Macedon vs Persia",
 			"Map": "random/islands",
 			"MapType": "random",
 			"Description": "Alexander could not take the island city of Tyre without a navy. Setup: 2 players, map size Small, you Macedon, AI Persians on Medium. Your job is Alexander's: build the fleet you did not have, win the harbour fight, then land siege engines on the enemy's island and break their walls. Macedon has fine siege — get it ashore under cover of your warships and the city falls.",
-			"useGameSetup": true,
-			"Preview": "islands.png"
+			"useGameSetup": true
 		},
 		"balearics": {
 			"Name": "The Balearics, 240 BC — Carthage vs Iberians",
 			"Map": "random/islands",
 			"MapType": "random",
 			"Description": "Carthage's western island empire against the slingers of the Balearic isles. Setup: 2 players, map size Medium, you Carthage, AI Iberians on Easy. Carthage has the best harbours in the game and thrives on trade: build docks on two islands and run merchant ships between them, colonise the empty islets, and buy your army with the profits. Iberian slingers murder ships' crews on the beach, so bombard the shore before you land.",
-			"useGameSetup": true,
-			"Preview": "islands.png"
+			"useGameSetup": true
 		},
 		"punic_corsica": {
 			"Name": "Punic War, 259 BC — Carthage vs Rome",
 			"Map": "random/corsica",
 			"MapType": "random",
 			"Description": "Rome and Carthage contest Corsica and Sardinia. Setup: 2 players, you Carthage on one island, AI Romans on Medium on the other. Rome will build boarding ships and legions; you must be the better sailor. Hold the strait with a standing fleet, tower the beaches Rome can reach, and land your own army only where the Roman towers are not. Sardinia was lost historically — keep it this time.",
-			"useGameSetup": true,
-			"Preview": "corsica.png"
+			"useGameSetup": true
 		},
 		"cyprus": {
 			"Name": "Cyprus, 306 BC — Ptolemies vs Seleucids",
 			"Map": "random/harbor",
 			"MapType": "random",
 			"Description": "The successors of Alexander fight for the richest island in the eastern Mediterranean. Setup: 2 players, you Ptolemies, AI Seleucids on Medium. Both sides have huge fleets, so this is a war of production: fish the deep water, keep four or five ships in reserve at all times, and repair at a garrisoned dock. The Ptolemies' great strength is a fat economy — outbuild them, then sail into their harbour with siege ships and take the island.",
-			"useGameSetup": true,
-			"Preview": "harbor.png"
+			"useGameSetup": true
 		},
 		"britannia": {
 			"Name": "Britannia, 55 BC — Britons vs Rome",
 			"Map": "skirmishes/northern_island_2p.xml",
 			"MapType": "skirmish",
 			"Description": "Caesar's legions are coming across the cold northern sea. Setup: 2 players, you Britons, AI Romans on Medium. Britons are not a naval power, so this is the defender's game: chariots and slingers on the cliffs, towers over every beach, and a modest fleet whose only job is to sink loaded Roman transports before they touch sand. Survive two landings, then counter-invade — the legions left their island half-empty to attack yours.",
-			"useGameSetup": true,
-			"Preview": "northern_island.png"
+			"useGameSetup": true
 		}
 	},
 	"Order": [

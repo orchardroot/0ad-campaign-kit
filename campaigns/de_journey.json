@@ -7,7 +7,6 @@
 			"Map": "skirmishes/isthmus_of_corinth_2p.xml",
 			"MapType": "skirmish",
 			"Description": "2 players, you plus one AI on Sandbox. Nothing will attack you; that's the point.\n\nDelenda Est runs six resources, not four. Alongside food, wood, stone and metal there is now Coin — earned through taxes, trade and crops — and Glory, earned through praise. Half the tech tree wants Coin and none of your vanilla habits produce any.\n\nSpend this whole game finding out where Coin comes from. Build the things that make it, hover over everything, read the tooltips. Don't fight anyone. You'll waste less time here than you would losing three real games to an empty treasury.",
-			"Preview": "isthmus_of_corinth_2p.png",
 			"useGameSetup": true
 		},
 		"general": {
@@ -15,7 +14,6 @@
 			"Map": "skirmishes/eurotas_valley_2p.xml",
 			"MapType": "skirmish",
 			"Description": "2 players. AI difficulty: Very Easy.\n\nPlay Rome. At the setup screen you now pick a leader: Marcellus, Fabius Maximus, or Scipio Africanus. This is not flavour text — the choice removes the other two heroes from your Civil Centre entirely and changes which technologies you're allowed to research.\n\nTake Maximus. His line leans towards health and defence, which forgives the mistakes you're about to make. Play the same map again with Marcellus afterwards if you want to feel the difference.",
-			"Preview": "acropolis_3.png",
 			"Requires": "sixth_resource",
 			"useGameSetup": true
 		},
@@ -24,7 +22,6 @@
 			"Map": "skirmishes/hindu_kush_2p.xml",
 			"MapType": "skirmish",
 			"Description": "2 players. AI difficulty: Easy.\n\nThis map has four different mercenary camps on it — desert, eastern, Indian and steppe. More than any other map in the mod. Capture them.\n\nMercenary camps are neutral structures you take by force, and each one hires a different regional roster. It means the units available to you depend on where you're standing, not just who you are. Take at least two camps this game and actually use what they sell you.",
-			"Preview": "hindu_kush_2p.png",
 			"Requires": "general",
 			"useGameSetup": true
 		},
@@ -33,7 +30,6 @@
 			"Map": "skirmishes/britannic_road_2p.xml",
 			"MapType": "skirmish",
 			"Description": "2 players. AI difficulty: Easy.\n\nBritannic Road has farmland on it — enriched ground that produces more food than ordinary soil. There's also a Brythonic mercenary camp if you want it.\n\nFind the farmland before you place a single farm. Where you put your food economy is now a map-reading decision rather than a reflex, and a player who farms good ground out-produces one who farms next to the Civil Centre because that's where the Civil Centre is.",
-			"Preview": "britannic_road_2.png",
 			"Requires": "mercenaries",
 			"useGameSetup": true
 		},
@@ -42,7 +38,6 @@
 			"Map": "skirmishes/dacian_lowlands_2p.xml",
 			"MapType": "skirmish",
 			"Description": "2 players. AI difficulty: Easy, or Medium if mission 4 was comfortable.\n\nStop playing Rome. Pick one of the factions that doesn't exist in the base game — Cimbri, Galatians, Suebi, Thebans, Syracusans, Scythians, Xiongnu, Yayoi or Zapotec — and take it out for a game.\n\nThere are Balkan and Gallic mercenary camps here to lean on while you work out what your new roster actually does. You have been playing one civilisation for two months. This is the mission where you find out how much of what you know was Rome and how much was 0 A.D.",
-			"Preview": "roadway.png",
 			"Requires": "farmlands",
 			"useGameSetup": true
 		},
@@ -51,7 +46,6 @@
 			"Map": "skirmishes/treasure_island_2p.xml",
 			"MapType": "skirmish",
 			"Description": "2 players. AI difficulty: Medium.\n\nYour naval education transfers, but the ships don't. Delenda Est has rebalanced warship costs, roles and counters, so the fleet composition you settled on in the Admiral's Course is a hypothesis again rather than a fact.\n\nSame sea, different navy. Find out what a Delenda Est fleet wants to be before you commit a game to it.",
-			"Preview": "treasure_island.png",
 			"Requires": "new_blood",
 			"useGameSetup": true
 		},
@@ -60,7 +54,6 @@
 			"Map": "skirmishes/caspian_sea_2pv2p.xml",
 			"MapType": "skirmish",
 			"Description": "4 players, 2v2 — you and an AI ally against two AI. AI difficulty: Medium.\n\nYour first team game in the mod. There are eastern and steppe mercenary camps on this map, and in a 2v2 the camps become contested ground rather than free real estate.\n\nWatch what your ally does with Coin. The AI plays the economy differently to you, and the fastest way to learn a resource is to watch something competent spend it.",
-			"Preview": "caspian_sea_skirmish_2v2.png",
 			"Requires": "treasure",
 			"useGameSetup": true
 		},
@@ -69,7 +62,6 @@
 			"Map": "skirmishes/via_augusta_4p.xml",
 			"MapType": "skirmish",
 			"Description": "4 players, free-for-all. AI difficulty: Medium.\n\nPlay Imperial Rome — the 'imp' faction, which Delenda Est splits out as a separate civilisation from the Republic you've been running. Different roster, different feel, same road.\n\nFour-way free-for-all on a Roman highway. The usual free-for-all rule applies: the player who commits first usually loses, and patience is a strategy rather than an absence of one.",
-			"Preview": "via_augusta.png",
 			"Requires": "caspian",
 			"useGameSetup": true
 		},
@@ -78,7 +70,6 @@
 			"Map": "skirmishes/corinthian_isthmus_2p.xml",
 			"MapType": "skirmish",
 			"Description": "2 players. AI difficulty: Medium, or Hard if you're winning comfortably.\n\nDelenda Est reworks this map into something with an actual objective — there is a Colossus on the isthmus and it can be taken. A map you have played more times than any other, turned into a different problem.\n\nCapture beats destruction here. If you've spent two months killing things, the habit will cost you this one.",
-			"Preview": "corinthian_isthmus_2p.png",
 			"Requires": "via_augusta",
 			"useGameSetup": true
 		},
@@ -87,7 +78,6 @@
 			"Map": "skirmishes/two_seas_6p.xml",
 			"MapType": "skirmish",
 			"Description": "6 players, 3v3. AI difficulty: Medium.\n\nThe graduation. Six players, farmland to fight over, a mercenary camp in the middle, and two seas to lose control of independently.\n\nEverything the course covered is on this map at once: find the good ground, fund yourself in Coin, hire what the region sells, and hold one sea properly rather than half of both. If your iMac starts to labour, this is the game to uncomment renderer.scale for.",
-			"Preview": "two_seas_redux.png",
 			"Requires": "colossus",
 			"useGameSetup": true
 		}
