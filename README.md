@@ -82,10 +82,10 @@ The big total-conversion mods ship almost no campaigns between them — Millenni
 
 So: two more courses, same structure as the rest, skirmish maps only.
 
-- **[Delenda Est] Journey through the World** (`campaigns/de_journey.json`) — ten missions, gated. Coin and Glory (the mod runs six resources, not four), choosing your Roman general, capturing mercenary camps, farming enriched ground, and a game with one of the twenty-odd factions the base game hasn't got. Finishes 3v3 on Two Seas.
-- **[Millennium A.D.] Six Crowns** (`campaigns/mad_six_crowns.json`) — ten missions, gated, AD 500–1000. One faction per mission for the first six — Norse, Anglo-Saxons, Byzantines, Carolingians, Umayyads, Rus — then free choice, a team game, and a finale in the deep forest. Uses all ten maps the mod ships.
+- **(Delenda Est) Journey through the World — Rebuilt** (`campaigns/de_journey.json`) — ten missions, gated. Coin and Glory (the mod runs six resources, not four), choosing your Roman general, capturing mercenary camps, farming enriched ground, and a game with one of the twenty-odd factions the base game hasn't got. Finishes 3v3 on Two Seas.
+- **(Millennium A.D.) Six Crowns** (`campaigns/mad_six_crowns.json`) — ten missions, gated, AD 500–1000. One faction per mission for the first six — Norse, Anglo-Saxons, Byzantines, Carolingians, Umayyads, Rus — then free choice, a team game, and a finale in the deep forest. Uses all ten maps the mod ships.
 
-Campaign names are prefixed with the mod they need, because the `user` mod is always loaded and the campaign menu otherwise shows all eight side by side with nothing to tell you which is which. `[Vanilla]` ones run on the base game; the other two need their mod enabled **on its own**, not stacked with map packs.
+Campaign names are prefixed with the mod they need, because the `user` mod is always loaded and the campaign menu otherwise shows all eight side by side with nothing to tell you which is which. Use round brackets, not square ones — 0 A.D.'s GUI parses `[...]` as markup, so a `[Vanilla]` prefix throws "Invalid tag" on the campaign screen and gets swallowed instead of displayed. `(Vanilla)` ones run on the base game; the other two need their mod enabled **on its own**, not stacked with map packs.
 
 ## Install
 

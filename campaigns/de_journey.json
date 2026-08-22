@@ -1,5 +1,5 @@
 {
-	"Name": "[Delenda Est] Journey through the World",
+	"Name": "(Delenda Est) Journey through the World — Rebuilt",
 	"Description": "A ten-mission course through Delenda Est, built for the way the mod actually works: skirmish maps only, no random maps anywhere in the chain, and one new idea per mission — Coin, generals, mercenary camps, farmland, and the twenty-odd factions the base game doesn't have.\n\nREQUIRES the Delenda Est mod to be enabled, on its own: mod.enabledmods = \"mod public 0ad_delenda_est_r28\". These missions will not launch in vanilla.\n\nEach mission opens the game-setup screen with the map locked in. The description tells you the player count, the teams and the AI difficulty to set.",
 	"Levels": {
 		"sixth_resource": {

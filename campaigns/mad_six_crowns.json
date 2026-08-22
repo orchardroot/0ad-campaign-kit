@@ -1,5 +1,5 @@
 {
-	"Name": "[Millennium A.D.] Six Crowns",
+	"Name": "(Millennium A.D.) Six Crowns",
 	"Description": "A ten-mission course through Millennium A.D., which moves 0 A.D. forward to AD 500–1000. One faction per mission for the first six — Norse, Anglo-Saxons, Byzantines, Carolingians, Umayyads, Rus — then free choice, a team game, and a finale in the deep forest.\n\nREQUIRES the Millennium A.D. mod to be enabled, on its own: mod.enabledmods = \"mod public millenniumad\". These missions will not launch in vanilla.\n\nThe mod ships ten skirmish maps and no random maps, so this course uses all ten. Each mission opens the game-setup screen with the map locked in; the description tells you the player count, teams and AI difficulty to set.",
 	"Levels": {
 		"sandbox": {
