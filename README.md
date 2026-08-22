@@ -100,7 +100,13 @@ cp campaigns/*.json ~/Library/Application\ Support/0ad/mods/user/campaigns/
 
 ## How the missions work
 
-Every mission opens the normal game-setup screen with the map locked in, and the mission description tells you the player count, teams and AI difficulty to set. That's deliberate, and also unavoidable: the campaign menu can only hand the setup screen a map, not players or AI, and scenario maps launched directly from a campaign get no AI at all. The upside is you choose the difficulty per attempt — start soft, replay harder. Progress still records because the campaign data rides along as a game-settings attribute.
+Every mission opens the normal game-setup screen with the map locked in, and the mission description tells you the player count, teams and AI difficulty to set.
+
+That works because each level sets `"useGameSetup": true`. It's worth knowing what that flag does, because the campaign format is barely documented and the failure is silent: with it, the setup screen opens with the map locked *and Petra AI is assigned automatically to every non-human slot*, at whatever difficulty `gui.gamesetup.aidifficulty` holds. Without it, the level launches straight into the map with **no AI at all** — you get a map, an opponent slot, and nobody in it. Leave it off deliberately for tutorials and sandboxes; set it everywhere else.
+
+Two other fields are not optional. `Order` must list every level key: the campaign menu sorts with `Order.indexOf(...)` and throws `TypeError: this.run.template.Order is undefined` without it, so the campaign won't open at all. `ShowUnavailable` lets you see the whole course from the start.
+
+One more trap, since campaign names are displayed through the GUI's markup parser: never put square brackets in a campaign or level name. `[...]` is tag syntax, so a `[Vanilla]` prefix throws "Invalid tag" and gets swallowed rather than shown. Round brackets are fine.
 
 Gating uses `Requires`, with `ShowUnavailable` so you can see the whole course from the start and know what you're working towards.
 
