@@ -1,5 +1,5 @@
 {
-	"Name": "Boot Camp — Learning the Ropes",
+	"Name": "[Vanilla] Boot Camp — Learning the Ropes",
 	"Description": "A ten-mission training course for new players. Each mission teaches one skill — economy, fighting, defending, booming, naval war — and unlocks the next. Combat missions open the game-setup screen first: leave everything alone except AI difficulty (start on Very Easy, move up when you win comfortably), then press Start Game.",
 	"Levels": {
 		"intro": {

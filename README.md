@@ -1,6 +1,6 @@
 # 0ad-island-warfare
 
-Six home-made campaigns for [0 A.D.](https://play0ad.com) Release 28 "Boiorix", four of them built on one stubborn conviction: the best way to play a real-time strategy game is from a boat.
+Eight home-made campaigns for [0 A.D.](https://play0ad.com) Release 28 "Boiorix", four of them built on one stubborn conviction: the best way to play a real-time strategy game is from a boat.
 
 I'm a new-ish 0 A.D. player who kept picking the island maps, kept losing the sea, and kept wishing the game had a course that taught naval play instead of hoping you'd work it out under fire. So I wrote one. Then three more. Every mission puts each nation on its own island — nothing reaches you that didn't sail — and each level teaches exactly one idea before it unlocks the next.
 
@@ -75,6 +75,17 @@ Before the boats, there were these. They live in the same folder because they li
 - **Great Battles of Antiquity** (`campaigns/great_battles.json`) — five hand-made scenarios from the base game, playable in any order: the Tiber, the Third Macedonian War, Migration, Death Canyon, Gold Rush.
 
 Neither needs a mod. Both are dry land, and I'm told some people prefer it.
+
+## And two for the overhaul mods
+
+The big total-conversion mods ship almost no campaigns between them — Millennium A.D. has none at all, and Delenda Est's single offering routes three of its fifteen levels through vanilla random maps, which its own author warns are unreliable in the mod. One of those sits at level five and gates everything after it.
+
+So: two more courses, same structure as the rest, skirmish maps only.
+
+- **[Delenda Est] Journey through the World** (`campaigns/de_journey.json`) — ten missions, gated. Coin and Glory (the mod runs six resources, not four), choosing your Roman general, capturing mercenary camps, farming enriched ground, and a game with one of the twenty-odd factions the base game hasn't got. Finishes 3v3 on Two Seas.
+- **[Millennium A.D.] Six Crowns** (`campaigns/mad_six_crowns.json`) — ten missions, gated, AD 500–1000. One faction per mission for the first six — Norse, Anglo-Saxons, Byzantines, Carolingians, Umayyads, Rus — then free choice, a team game, and a finale in the deep forest. Uses all ten maps the mod ships.
+
+Campaign names are prefixed with the mod they need, because the `user` mod is always loaded and the campaign menu otherwise shows all eight side by side with nothing to tell you which is which. `[Vanilla]` ones run on the base game; the other two need their mod enabled **on its own**, not stacked with map packs.
 
 ## Install
 

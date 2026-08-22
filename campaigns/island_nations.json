@@ -1,5 +1,5 @@
 {
-	"Name": "Island Nations — One Nation, One Island",
+	"Name": "[Vanilla] Island Nations — One Nation, One Island",
 	"Description": "An eight-mission course where every player owns an island and nothing else. Nobody shares land: your enemies, your allies and you each start on your own island, and every fight crosses water. Missions open the game-setup screen with the map locked in — the description tells you the player count, teams and AI difficulty to set (this course ramps from Easy to Medium). Best fleets for the job: Athens, Carthage, Ptolemies or Seleucids.",
 	"Levels": {
 		"one_island_each": {
