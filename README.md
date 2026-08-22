@@ -116,6 +116,28 @@ Gating uses `Requires`, with `ShowUnavailable` so you can see the whole course f
 
 [`docs/island-maps-cheatsheet.md`](docs/island-maps-cheatsheet.md) — every ship-friendly map in vanilla 0 A.D. and the mod.io map packs, which campaign missions use them, and settings recipes ranging from "totally chill boat-building afternoon" to "eight players, let chaos reign".
 
+## Tools
+
+```sh
+tools/validate-campaigns.py            # lint every campaign in campaigns/
+tools/validate-campaigns.py --installed  # treat missing maps as errors, not warnings
+```
+
+Checks the things that fail silently: missing `Order`, missing `useGameSetup`,
+square brackets in names, bare-filename `Preview` values, dangling `Requires`,
+gating cycles, and map references that don't resolve against the base game plus
+whatever mods are installed. Exits non-zero on any error, so it works as a
+pre-commit hook.
+
+Written after four separate silent failures in one afternoon. The reasoning
+behind each check is in [`docs/campaign-format.md`](docs/campaign-format.md),
+which documents the parts of the campaign format that aren't written down
+anywhere else.
+
+`config/local.cfg` is my 0 A.D. config — detailed tooltips, a game clock,
+building edge-snap, a further camera zoom, and a commented-out performance
+block for older hardware. Drop it in `~/Library/Application Support/0ad/config/`.
+
 ## Contributing
 
 If you know a good island map I've missed, or a mission that would teach something these don't, open an issue or a PR. Campaign files are plain JSON — the hardest part is the prose.
