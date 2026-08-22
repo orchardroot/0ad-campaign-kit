@@ -1,0 +1,11 @@
+{
+	"settings" : {
+		"Name" : "The Narrows",
+		"Script" : "the_narrows.js",
+		"Description" : "Two facing landmasses divided by one navigable strait that runs the whole length of the map. There is no ford and no way around, the metal lies on islets in mid-channel and the fish shoal there too. Build a fleet, take the water, and the land takes care of itself.",
+		"Keywords" : ["multiplayer"],
+		"Preview" : "english_channel.png",
+		"SupportedBiomes" : "generic/",
+		"CircularMap" : false
+	}
+}

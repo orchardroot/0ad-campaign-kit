@@ -1,9 +1,9 @@
 {
-	"name": "halcyon",
+	"name": "campaign-kit-maps",
 	"version": "0.1.0",
-	"label": "Halcyon",
-	"description": "A random map set in a golden-hour Mediterranean archipelago. Every player wakes on their own island, with a contested ring of stone-and-metal islets in the middle sea and shoals thick with fish. The sea-going companion to Amberwood. Supports 2-8 players.",
-	"dependencies": [
-		"0ad=0.28.0"
-	]
+	"label": "Campaign Kit Maps",
+	"description": "Two random maps built for naval play. Halcyon is a golden-hour archipelago where every nation gets its own island and the stone and metal sit on contested mid-sea islets. The Narrows splits the map with a navigable strait: hold it and you win, and the mainland is deliberately short of metal so you have to. Halcyon has three biomes — Golden Hour, Squall and Moonlight.",
+	"url": "https://github.com/orchardroot/0ad-campaign-kit",
+	"dependencies": ["0ad=0.28.0"],
+	"type": "maps"
 }

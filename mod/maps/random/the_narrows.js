@@ -100,9 +100,15 @@ export function* generateMap(mapSettings)
 	const straitEnd =
 		new Vector2D(mapBounds.right + 10, mapCenter.y).rotateAround(straitAngle, mapCenter);
 
+	// Two parallel lines of players, one shore each. groupPlayersByArea() keeps
+	// allies together, so a team normally ends up sharing a coastline.
+	const playerPlacement = playerPlacementRiver(straitAngle + Math.PI / 2, fractionToTiles(0.62));
+	const playerIDs = playerPlacement.playerIDs;
+	const playerPosition = playerPlacement.playerPosition;
+
 	g_Map.log("Placing the two shores");
 	placePlayerBases({
-		"PlayerPlacement": playerPlacementRiver(straitAngle + Math.PI / 2, fractionToTiles(0.62)),
+		"PlayerPlacement": playerPlacement,
 		"PlayerTileClass": clPlayer,
 		"BaseResourceClass": clBaseResource,
 		"CityPatch": {
@@ -157,8 +163,8 @@ export function* generateMap(mapSettings)
 
 	g_Map.log("Raising the islets in the channel");
 	const isletCount = scaleByMapSize(3, 9);
-	const isletRadius = scaleByMapSize(6, 11);
-	const isletClearance = scaleByMapSize(4, 9);
+	const isletRadius = scaleByMapSize(5, 11);
+	const isletClearance = scaleByMapSize(3, 8);
 	const straitLength = mapBounds.right - mapBounds.left;
 
 	for (let i = 0; i < isletCount; ++i)
@@ -166,7 +172,7 @@ export function* generateMap(mapSettings)
 		// Spread the islets evenly down the channel, nudged off the centreline
 		// so the strait never becomes a single symmetric corridor.
 		const alongStrait = mapBounds.left + straitLength * (i + 0.5) / isletCount;
-		const acrossStrait = mapCenter.y + (i % 2 ? 1 : -1) * randFloat(0, straitWidth / 6);
+		const acrossStrait = mapCenter.y + (i % 2 ? 1 : -1) * randFloat(0, straitWidth / 10);
 
 		const isletCenter =
 			new Vector2D(alongStrait, acrossStrait).rotateAround(straitAngle, mapCenter).round();
@@ -357,9 +363,6 @@ export function* generateMap(mapSettings)
 	if (!mapSettings.Nomad)
 	{
 		g_Map.log("Giving every player a dock on the strait");
-		const [playerIDs, playerPosition] =
-			Object.values(playerPlacementRiver(straitAngle + Math.PI / 2, fractionToTiles(0.62)));
-
 		for (let i = 0; i < numPlayers; ++i)
 		{
 			const dockLocation = findLocationInDirectionBasedOnHeight(
