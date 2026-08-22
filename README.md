@@ -114,6 +114,9 @@ feeling clever. Built for the sea-control lesson.
 ## Tools
 
 ```sh
+tools/test-maps.sh                        # generate every map, headless, no window
+tools/test-maps.sh halcyon                # just the one
+
 tools/validate-campaigns.py               # lint every campaign
 tools/validate-campaigns.py --installed   # missing maps become errors, not warnings
 
@@ -126,6 +129,13 @@ tools/audit-mods.py --mods "mod public 0ad_delenda_est_r28"
 `Preview`, a `Requires` pointing at nothing, gating cycles, and map references
 that don't resolve against the base game plus whatever mods you've got
 installed. Exits non-zero, so it'll work as a pre-commit hook.
+
+**`test-maps.sh`** generates every map in `mod/` without opening a window, using
+`-autostart-nonvisual`, and tells you whether it worked. A map script can be
+perfectly valid JavaScript and still fall over the moment the generator touches
+it, so this is the only test that counts. It covers each biome and the player
+count extremes, because `scaleByMapSize` is usually what bites. About a second
+per run. Both maps here pass at 2, 4 and 8 players across all biomes.
 
 **`audit-mods.py`** works out the virtual filesystem for a mod chain, honouring
 load order and `.DELETED` masking, then tells you which missions survive it.
