@@ -1,16 +1,16 @@
 # The 0 A.D. campaign format, and the bits nobody wrote down
 
 Notes for Release 28. The campaign system is officially experimental, and the
-format has almost no documentation — so most of what follows was learned by
+format has almost no documentation, so most of what follows was learned by
 writing campaigns that loaded fine, looked fine, and were quietly broken.
 
 Everything here is checked automatically by [`tools/validate-campaigns.py`](../tools/validate-campaigns.py).
 
 Source of truth, if you want to read it yourself, is inside `public.zip`:
 
-- `gui/common/campaigns/CampaignTemplate.js` — what makes a template valid
-- `gui/campaigns/default_menu/CampaignMenu.js` — the menu, gating and launch
-- `gui/maps/MapCache.js` — preview resolution
+- `gui/common/campaigns/CampaignTemplate.js`, what makes a template valid
+- `gui/campaigns/default_menu/CampaignMenu.js`, the menu, gating and launch
+- `gui/maps/MapCache.js`, preview resolution
 
 ## Shape
 
@@ -34,12 +34,12 @@ Source of truth, if you want to read it yourself, is inside `public.zip`:
 ```
 
 The file lives in a mod's `campaigns/` directory. Its **filename is the
-identifier** — `CampaignTemplate.getAvailableTemplates()` derives the id by
-slicing the path — and progress saves bind to that, not to `Name`. So renaming
+identifier**. `CampaignTemplate.getAvailableTemplates()` derives the id by
+slicing the path, and progress saves bind to that, not to `Name`. So renaming
 the display name is safe; renaming the file orphans every save.
 
 The `user` mod (`mods/user/campaigns/`) is always loaded whatever mod set is
-active, which is the convenient place to keep campaigns — and the reason to
+active, which is the convenient place to keep campaigns, and the reason to
 label them, see below.
 
 ## The five silent failures
@@ -73,8 +73,8 @@ game plays perfectly; it's just empty.
 
 Set it on every level that should have an opponent.
 
-For a level that deliberately has none — a tutorial, a sandbox, a browsing
-index — write `"useGameSetup": false` explicitly rather than omitting the key.
+For a level that deliberately has none (a tutorial, a sandbox, a browsing
+index), write `"useGameSetup": false` explicitly rather than omitting the key.
 The game treats `false` and absent identically, since it tests
 `if (level.useGameSetup)`. The difference is for the reader and for the linter:
 explicit `false` says "I meant this", absence says "I forgot", and those are
@@ -82,7 +82,7 @@ the same file with very different bugs.
 
 ### 3. Never put square brackets in a name
 
-GUI strings run through the markup parser, where `[...]` is tag syntax — the
+GUI strings run through the markup parser, where `[...]` is tag syntax, the
 same syntax as `[color="red"]…[/color]` in map descriptions. A `[Vanilla] `
 prefix produces:
 
@@ -91,7 +91,7 @@ ERROR: Invalid tag 'Vanilla' at 8 in '[Vanilla] Boot Camp — Learning the Ropes
 ```
 
 and the label is *swallowed* rather than displayed. A bracketed label with a
-space in it, like `[Millennium A.D.]`, throws twice — the parser reads `A.D.`
+space in it, like `[Millennium A.D.]`, throws twice, because the parser reads `A.D.`
 as a tag parameter with no value.
 
 Round brackets are fine, as every stock map named `(2 players)` demonstrates.
@@ -103,7 +103,7 @@ The trap is that two different fields share the name and take different values.
 - A **map's** `settings.Preview` is a bare `foo.png`, because `MapCache`
   prepends `session/icons/mappreview/` itself.
 - A **campaign level's** `Preview` becomes a GUI sprite, and GUI sprites resolve
-  under `art/textures/ui/` — so it needs the full
+  under `art/textures/ui/`, so it needs the full
   `session/icons/mappreview/foo.png`.
 
 Get it wrong and you get a magenta missing-texture box plus:
@@ -130,7 +130,7 @@ the setup screen players or AI. That's exactly what `useGameSetup` does.
 whole course is visible from the start with locked entries greyed out, which
 reads better than a list that grows.
 
-Watch for cycles — two levels requiring each other are silently unreachable
+Watch for cycles. Two levels requiring each other are silently unreachable
 forever, with no error.
 
 ## Working with total conversions

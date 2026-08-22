@@ -30,7 +30,7 @@ case "$(uname -s)" in
 	Darwin) USERDIR="$HOME/Library/Application Support/0ad" ;;
 	Linux)  USERDIR="${XDG_DATA_HOME:-$HOME/.local/share}/0ad" ;;
 	*)      echo "Unsupported platform: $(uname -s)." >&2
-	        echo "On Windows the equivalent path is %appdata%\\0ad — copy the folders by hand." >&2
+	        echo "On Windows the equivalent path is %appdata%\\0ad. Copy the folders by hand." >&2
 	        exit 1 ;;
 esac
 
@@ -38,7 +38,7 @@ say() { printf '  %s\n' "$1"; }
 run() { if [ "$DRY" = 1 ]; then say "would: $*"; else "$@"; fi; }
 
 if pgrep -f pyrogenesis >/dev/null 2>&1; then
-	echo "0 A.D. is running. Quit it first — it rewrites its config on exit." >&2
+	echo "0 A.D. is running. Quit it first, it rewrites its config on exit." >&2
 	exit 1
 fi
 
@@ -66,7 +66,7 @@ if [ ! -d "$USERDIR" ]; then
 fi
 
 echo "Installing to $USERDIR"
-[ "$DRY" = 1 ] && echo "  (dry run — nothing will be written)"
+[ "$DRY" = 1 ] && echo "  (dry run, nothing will be written)"
 
 # --- campaigns -------------------------------------------------------------
 # These go in the always-loaded 'user' mod, so they appear whatever mod set is
@@ -107,5 +107,5 @@ echo "  (Vanilla)          works on the base game"
 echo "  (Delenda Est)      enable ONLY Delenda Est: mod public 0ad_delenda_est_r28"
 echo "  (Millennium A.D.)  enable ONLY Millennium A.D.: mod public millenniumad"
 echo
-echo "Total conversions must be enabled alone — never stacked with map packs or"
+echo "Total conversions must be enabled alone, never stacked with map packs or"
 echo "each other. tools/audit-mods.py will tell you what a given mod set breaks."
