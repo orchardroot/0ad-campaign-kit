@@ -1,0 +1,11 @@
+{
+	"settings" : {
+		"Name" : "Halcyon",
+		"Script" : "halcyon.js",
+		"Description" : "A golden-hour Mediterranean archipelago. Every player wakes on an island of their own, and nothing reaches you that did not sail. A ring of contested islets in the middle sea carries the stone and metal nobody has at home — easy to take, hard to keep. The shoals are thick with fish, so a fleet can feed itself.\n\n[color=\"red\"]IMPORTANT: This map requires the Halcyon mod.[/color]",
+		"Preview" : "archipelago.png",
+		"Keywords": ["multiplayer"],
+		"SupportedBiomes": "halcyon/",
+		"CircularMap" : true
+	}
+}

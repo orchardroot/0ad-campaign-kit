@@ -1,0 +1,113 @@
+{
+	"Name": "(Delenda Est) Museum — A Tour of the Mod",
+	"Description": "Not a campaign. An index of the showcase, demo and eyecandy maps Delenda Est ships, so you can walk round the mod without playing a match.\n\nREQUIRES the Delenda Est mod to be enabled, on its own: mod.enabledmods = \"mod public 0ad_delenda_est_r28\". None of these will launch in vanilla.\n\nNothing is gated and nothing has an opponent. Every entry launches straight into the map with no AI in any slot, deliberately — the game is running, there is simply nobody else in it. Alt+D opens the developer overlay if you want to change perspective and stand in another faction's town; the usual cheats work for spawning things to look at.\n\nDelenda Est carries roughly twenty civilisations the base game doesn't have, and reading a wiki page about them is not the same as clicking on one.",
+	"Levels": {
+		"portraits": {
+			"Name": "Unit Portraits",
+			"Map": "scenarios/unit_portraits.xml",
+			"MapType": "scenario",
+			"Description": "A bare circular map with eight civilisations' units laid out on it and nothing else — no terrain features, no buildings, no distractions. This is the map the game's own portrait renders are shot on.\n\nThe fastest way to see what a roster physically looks like. Zoom in far enough and it becomes obvious how much of a faction's identity is armour and helmet shape.",
+			"useGameSetup": false
+		},
+		"units_demo": {
+			"Name": "Units Demo — Every Unit in the Game",
+			"Map": "scenarios/actors_demo.xml",
+			"MapType": "scenario",
+			"Description": "A trigger script spawns one of everything, in rows, on a revealed map. The vanilla version of this is a long walk; the Delenda Est version is longer, because the mod has twenty-odd extra civilisations to get through.\n\nStart here if you want the whole collection in one place rather than one faction at a time.",
+			"useGameSetup": false
+		},
+		"heroes": {
+			"Name": "Hero Testing",
+			"Map": "scenarios/hero_testing.xml",
+			"MapType": "scenario",
+			"Description": "Built by the developers to check hero auras, which makes it accidentally the best reference map in the mod. Athenians, Britons, Carthaginians, Epirotes, Gauls, Han, Iberians and Kushites, heroes out and ready to inspect.\n\nDelenda Est turns heroes into generals you commit to at the setup screen, and the choice locks the other two out of your Civil Centre. Read the auras here, where it costs nothing, rather than forty minutes into a game.",
+			"useGameSetup": false
+		},
+		"formations": {
+			"Name": "Formation Testing",
+			"Map": "scenarios/formation_testing.xml",
+			"MapType": "scenario",
+			"Description": "The same eight rosters as Hero Testing, but arranged for watching formations move. Select a block, pick a formation, send it somewhere and see what it actually does on the way.\n\nFormations are the part of this game most people never touch because there is never a calm moment to experiment. This is the calm moment.",
+			"useGameSetup": false
+		},
+		"arena": {
+			"Name": "Combat Arena",
+			"Map": "scenarios/combat_arena.xml",
+			"MapType": "scenario",
+			"Description": "Spartans, Athenians, Britons and Persians in an arena built for playtesting troop types against each other.\n\nWith no AI running, all four sides are yours. Line up ten of one thing against ten of another and settle an argument with yourself about counters — Delenda Est has rebalanced enough that your vanilla instincts are only half right.",
+			"useGameSetup": false
+		},
+		"combat_demo": {
+			"Name": "Combat Demo",
+			"Map": "scenarios/combat_demo.xml",
+			"MapType": "scenario",
+			"Description": "A small, revealed skirmish between ranged and melee units — Imperial Rome on one side, Athens on the other, everything on defensive stance.\n\nSmall enough to actually follow. If you have ever wanted to watch a single exchange closely instead of a hundred at once, this is the one.",
+			"useGameSetup": false
+		},
+		"combat_huge": {
+			"Name": "Combat Demo — Huge",
+			"Map": "scenarios/combat_demo_huge.xml",
+			"MapType": "scenario",
+			"Description": "1296 units per player. The map's own description admits it is extremely slow and blames the need for more optimisation, which is honest of it.\n\nOpen it once for the spectacle and to find out where your machine gives up. Not a place to try and play anything.",
+			"useGameSetup": false
+		},
+		"ships": {
+			"Name": "Ship Combat Demo",
+			"Map": "scenarios/ship_combat_demo.xml",
+			"MapType": "scenario",
+			"Description": "Britons against Persians at sea, both with the population limit raised to 500 so you can build a fleet worth the name.\n\nDelenda Est reworks warship costs, roles and counters, so whatever you learned about navies in the base game is a hypothesis again. Both fleets are under your control here, which makes it the cheapest possible way to test one against the other.",
+			"useGameSetup": false
+		},
+		"han": {
+			"Name": "Sandbox — The Han Chinese",
+			"Map": "scenarios/sandbox_han.xml",
+			"MapType": "scenario",
+			"Description": "Delenda Est deletes almost every vanilla sandbox map. This is the one it keeps.\n\nA quiet Han settlement with nobody coming for it. Build badly, at leisure, and click on everything — this is the closest the mod comes to shipping a world-builder.",
+			"useGameSetup": false
+		},
+		"noba": {
+			"Name": "Noba Village",
+			"Map": "scenarios/noba_village.xml",
+			"MapType": "scenario",
+			"Description": "A village of the Noba, one of the peoples Delenda Est adds that the base game has never heard of. Endless victory condition, so it simply sits there.\n\nWorth opening for the architecture alone. Nubian building sets look like nothing else in 0 A.D.",
+			"useGameSetup": false
+		},
+		"napata": {
+			"Name": "Napata Reconstruction",
+			"Map": "scenarios/napata_reconstruction.xml",
+			"MapType": "scenario",
+			"Description": "A reconstruction of the ancient Kushite capital, revealed from the start. The map's own notes say plainly that it is not intended to be playable, which is exactly why it belongs in a museum rather than a campaign.\n\nIt is a three-megabyte map file of city. Pan across it slowly.",
+			"useGameSetup": false
+		},
+		"giza": {
+			"Name": "Giza Screenshot",
+			"Map": "scenarios/giza_screenshot.xml",
+			"MapType": "scenario",
+			"Description": "Giza, built as a backdrop for screenshots, populated by an implausible guest list: Ptolemies, Imperial Rome, Scythians, Zapotecs, Xiongnu, Suebi, Epirotes and Thebans.\n\nHistorically absurd and completely the point — six of those factions exist only in this mod, and here they all are standing in the same photograph.",
+			"useGameSetup": false
+		},
+		"rome": {
+			"Name": "Roman Eyecandy",
+			"Map": "scenarios/roman_eyecandy.xml",
+			"MapType": "scenario",
+			"Description": "An Imperial Roman city set out for looking at, with the same unlikely crowd of Scythians, Zapotecs, Xiongnu, Suebi, Epirotes and Thebans wandering through it.\n\nDelenda Est splits Imperial Rome out as its own civilisation from the Republic. This is where you see what that actually buys you in stonework.",
+			"useGameSetup": false
+		}
+	},
+	"Order": [
+		"portraits",
+		"units_demo",
+		"heroes",
+		"formations",
+		"arena",
+		"combat_demo",
+		"combat_huge",
+		"ships",
+		"han",
+		"noba",
+		"napata",
+		"giza",
+		"rome"
+	],
+	"ShowUnavailable": true
+}

@@ -71,7 +71,14 @@ Without it the level launches straight into the map with **no AI in any slot**.
 You get a map, an opponent's starting units, and nobody controlling them. The
 game plays perfectly; it's just empty.
 
-Leave it off deliberately for tutorials and sandboxes. Set it everywhere else.
+Set it on every level that should have an opponent.
+
+For a level that deliberately has none — a tutorial, a sandbox, a browsing
+index — write `"useGameSetup": false` explicitly rather than omitting the key.
+The game treats `false` and absent identically, since it tests
+`if (level.useGameSetup)`. The difference is for the reader and for the linter:
+explicit `false` says "I meant this", absence says "I forgot", and those are
+the same file with very different bugs.
 
 ### 3. Never put square brackets in a name
 

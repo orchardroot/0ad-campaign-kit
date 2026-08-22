@@ -1,0 +1,99 @@
+{
+	"Description": {
+		"Title": "Halcyon Moonlight",
+		"Description": "A dead calm under a high moon. The islands are black shapes on a sheet of cold blue, oars carry further than they should, and a sail is visible long before it is welcome."
+	},
+	"Environment": {
+		"SunColor": { "r": 0.219608, "g": 0.266667, "b": 0.376471 },
+		"SunElevation": 0.9,
+		"SunRotation": -0.306796,
+		"AmbientColor": { "r": 0.235294, "g": 0.278431, "b": 0.407843 },
+		"Water": {
+			"WaterBody": {
+				"Color": { "r": 0.027451, "g": 0.062745, "b": 0.14902 },
+				"Tint": { "r": 0.219608, "g": 0.317647, "b": 0.545098 },
+				"Murkiness": 0.55,
+				"Waviness": 1.2
+			}
+		},
+		"Postproc": {
+			"PostprocEffect": "hdr",
+			"Brightness": -0.11,
+			"Saturation": 0.42,
+			"Contrast": 1.08,
+			"Bloom": 0.26
+		}
+	},
+	"Terrains": {
+		"mainTerrain": [
+			"aegean_grass_01",
+			"aegean_grass_04"
+		],
+		"forestFloor1": "aegean_forestfloor_01",
+		"forestFloor2": "medit_forestfloor_a",
+		"cliff": [
+			"aegean_cliff_seaside_03",
+			"aegean_cliff_01"
+		],
+		"tier1Terrain": [
+			"aegean_grass_dirt_03"
+		],
+		"tier2Terrain": [
+			"aegean_grass_02"
+		],
+		"tier3Terrain": [
+			"aegean_dirt_01"
+		],
+		"tier4Terrain": [
+			"medit_shrubs_a"
+		],
+		"hill": [
+			"aegean_mountain_01",
+			"aegean_rocks_plants_01"
+		],
+		"dirt": [
+			"aegean_dirt_01",
+			"aegean_grass_dirt_04"
+		],
+		"road": "aegean_paving_03",
+		"roadWild": "aegean_rocks_grass_01",
+		"shoreBlend": "aegean_sand_01_wet",
+		"shore": "aegean_sand_01_wet",
+		"water": "aegean_sand_02_wet"
+	},
+	"Gaia": {
+		"tree1": "gaia/tree/cypress",
+		"tree2": "gaia/tree/cypress_wild",
+		"tree3": "gaia/tree/olive",
+		"tree4": "gaia/tree/aleppo_pine",
+		"tree5": "gaia/tree/cretan_date_palm_tall",
+		"fruitBush": "gaia/fruit/berry_01",
+		"startingAnimal": "gaia/fauna_chicken",
+		"chicken": "gaia/fauna_chicken",
+		"fish": "gaia/fish/generic",
+		"mainHuntableAnimal": "gaia/fauna_deer",
+		"secondaryHuntableAnimal": "gaia/fauna_goat",
+		"stoneLarge": "gaia/rock/aegean_large",
+		"stoneSmall": "gaia/rock/aegean_small",
+		"metalLarge": "gaia/ore/aegean_anatolian_01",
+		"metalSmall": "gaia/ore/aegean_anatolian_small_01"
+	},
+	"Decoratives": {
+		"grass": "actor|props/flora/bush_medit_sm.xml",
+		"grassShort": "actor|props/flora/bush_medit_sm.xml",
+		"reeds": "actor|props/flora/reeds_pond_lush_b.xml",
+		"lillies": "actor|props/flora/water_lillies.xml",
+		"rockLarge": "actor|geology/stone_granite_large.xml",
+		"rockMedium": "actor|geology/stone_granite_med.xml",
+		"bushMedium": "actor|flora/bushes/medit_scrub_01.xml",
+		"bushSmall": "actor|flora/trees/lavender_bush_01.xml",
+		"tree": "actor|flora/trees/cypress_mediterranean_wild.xml"
+	},
+	"ResourceCounts": {
+		"trees": {
+			"min": 700,
+			"max": 3000,
+			"forestProbability": 0.6
+		}
+	}
+}

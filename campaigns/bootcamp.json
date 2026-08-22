@@ -6,20 +6,23 @@
 			"Name": "01 — Basic Training",
 			"Map": "tutorials/introductory_tutorial.xml",
 			"MapType": "scenario",
-			"Description": "The built-in interactive tutorial. Follow the on-screen instructions to learn moving units, gathering, building, and training. Key habits to take away: your Civic Center should almost never sit idle (keep training women), and press the period key ( . ) to find idle workers."
+			"Description": "The built-in interactive tutorial. Follow the on-screen instructions to learn moving units, gathering, building, and training. Key habits to take away: your Civic Center should almost never sit idle (keep training women), and press the period key ( . ) to find idle workers.",
+			"useGameSetup": false
 		},
 		"economy": {
 			"Name": "02 — Feeding the War Machine",
 			"Map": "tutorials/starting_economy_walkthrough.xml",
 			"MapType": "scenario",
 			"Description": "A guided walkthrough of a strong opening build order. It moves fast — expect to restart it two or three times; that repetition is the point. Everything in 0 A.D. flows from a good first five minutes: women on food, men on wood, houses before you hit the population cap.",
-			"Requires": "intro"
+			"Requires": "intro",
+			"useGameSetup": false
 		},
 		"sandbox": {
 			"Name": "Playground — Sandbox (optional)",
 			"Map": "scenarios/sandbox_romans.xml",
 			"MapType": "scenario",
-			"Description": "A pressure-free playground showcasing the Roman civilization. There is no enemy and no victory condition, so this mission never shows as 'complete' — explore the buildings, phase up, try siege engines, then leave via Menu > Exit. Come back here any time you want to test something without being attacked."
+			"Description": "A pressure-free playground showcasing the Roman civilization. There is no enemy and no victory condition, so this mission never shows as 'complete' — explore the buildings, phase up, try siege engines, then leave via Menu > Exit. Come back here any time you want to test something without being attacked.",
+			"useGameSetup": false
 		},
 		"first_command": {
 			"Name": "03 — First Command: Miletus",

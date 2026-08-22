@@ -18,13 +18,11 @@ import sys
 import zipfile
 from glob import glob
 
-# Levels that deliberately have no opponent, so useGameSetup is correctly absent.
-NO_OPPONENT = {
-    ("bootcamp.json", "intro"),
-    ("bootcamp.json", "economy"),
-    ("bootcamp.json", "sandbox"),
-    ("mad_six_crowns.json", "sandbox"),
-}
+# A level that deliberately has no opponent - a tutorial, a sandbox, a browsing
+# index - should say so with an explicit "useGameSetup": false. The game treats
+# false and absent identically (it tests `if (level.useGameSetup)`), but the
+# explicit false distinguishes "I meant this" from "I forgot", which is the
+# whole difference between a sandbox and a match against nobody.
 
 MAC_APP = "/Applications/0 A.D..app/Contents/Resources/data/mods/public/public.zip"
 MAC_MODS = os.path.expanduser("~/Library/Application Support/0ad/mods")
@@ -144,8 +142,11 @@ def check(path, maps, strict_maps):
 
         # Without useGameSetup the level launches straight into the map with no AI
         # assigned to any slot: an opponent slot with nobody in it.
-        if not lv.get("useGameSetup") and (base, key) not in NO_OPPONENT:
-            errs.append(f"{where}: no 'useGameSetup' - launches with NO AI in any opponent slot")
+        if "useGameSetup" not in lv:
+            errs.append(
+                f"{where}: no 'useGameSetup' - launches with NO AI in any opponent slot. "
+                'Set it true, or false if that is deliberate.'
+            )
 
         req = lv.get("Requires")
         if req and req not in levels:

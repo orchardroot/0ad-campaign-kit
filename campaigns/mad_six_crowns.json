@@ -6,7 +6,8 @@
 			"Name": "01 — The Norse Sandbox",
 			"Map": "scenarios/sandbox_norse.xml",
 			"MapType": "scenario",
-			"Description": "No opponents, no timer, no AI. Launched straight from here, so there is nothing to configure.\n\nMillennium A.D. moves the whole game forward roughly a thousand years, to AD 500–1000. Six factions, none of which you have ever played: Norse, Anglo-Saxons, Byzantines, Carolingians, Rus and Umayyads. The units are different, the buildings are different, and the roster you know is gone.\n\nBuild a Norse settlement badly and at leisure. Click on everything. This is the only mission in the course where nobody is coming."
+			"Description": "No opponents, no timer, no AI. Launched straight from here, so there is nothing to configure.\n\nMillennium A.D. moves the whole game forward roughly a thousand years, to AD 500–1000. Six factions, none of which you have ever played: Norse, Anglo-Saxons, Byzantines, Carolingians, Rus and Umayyads. The units are different, the buildings are different, and the roster you know is gone.\n\nBuild a Norse settlement badly and at leisure. Click on everything. This is the only mission in the course where nobody is coming.",
+			"useGameSetup": false
 		},
 		"fjords": {
 			"Name": "02 — Norse: The Fjords",

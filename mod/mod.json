@@ -1,0 +1,9 @@
+{
+	"name": "halcyon",
+	"version": "0.1.0",
+	"label": "Halcyon",
+	"description": "A random map set in a golden-hour Mediterranean archipelago. Every player wakes on their own island, with a contested ring of stone-and-metal islets in the middle sea and shoals thick with fish. The sea-going companion to Amberwood. Supports 2-8 players.",
+	"dependencies": [
+		"0ad=0.28.0"
+	]
+}

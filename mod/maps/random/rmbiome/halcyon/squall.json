@@ -1,0 +1,104 @@
+{
+	"Description": {
+		"Title": "Halcyon Squall",
+		"Description": "The light has gone flat and grey and the sea has turned against the islands. Spray comes over the low rocks, the colour is scoured out of everything, and a crossing that was routine an hour ago is now a decision."
+	},
+	"Environment": {
+		"SunColor": { "r": 0.588235, "g": 0.615686, "b": 0.65098 },
+		"SunElevation": 0.68,
+		"SunRotation": -2.1,
+		"AmbientColor": { "r": 0.376471, "g": 0.396078, "b": 0.427451 },
+		"Water": {
+			"WaterBody": {
+				"Color": { "r": 0.145098, "g": 0.180392, "b": 0.196078 },
+				"Tint": { "r": 0.407843, "g": 0.470588, "b": 0.494118 },
+				"Murkiness": 0.9,
+				"Waviness": 9
+			}
+		},
+		"Fog": {
+			"FogThickness": 0.45,
+			"FogFactor": 0.006
+		},
+		"Postproc": {
+			"PostprocEffect": "hdr",
+			"Brightness": -0.06,
+			"Saturation": 0.55,
+			"Contrast": 0.95,
+			"Bloom": 0.08
+		}
+	},
+	"Terrains": {
+		"mainTerrain": [
+			"aegean_grass_03",
+			"aegean_grass_dirt_02",
+			"aegean_grass_01"
+		],
+		"forestFloor1": "aegean_forestfloor_01",
+		"forestFloor2": "medit_forestfloor_a",
+		"cliff": [
+			"aegean_cliff_seaside_02",
+			"aegean_cliff_02"
+		],
+		"tier1Terrain": [
+			"aegean_grass_dirt_02"
+		],
+		"tier2Terrain": [
+			"aegean_rocks_grass_01"
+		],
+		"tier3Terrain": [
+			"aegean_dirt_01"
+		],
+		"tier4Terrain": [
+			"medit_shrubs"
+		],
+		"hill": [
+			"aegean_mountain_01",
+			"aegean_rocks_dirt_01"
+		],
+		"dirt": [
+			"aegean_dirt_01",
+			"aegean_rocks_dirt_02"
+		],
+		"road": "aegean_paving_01",
+		"roadWild": "aegean_rocks_grass_01",
+		"shoreBlend": "aegean_sand_02",
+		"shore": "aegean_sand_02",
+		"water": "aegean_sand_02_wet"
+	},
+	"Gaia": {
+		"tree1": "gaia/tree/pine_maritime",
+		"tree2": "gaia/tree/cypress_wild",
+		"tree3": "gaia/tree/juniper_prickly",
+		"tree4": "gaia/tree/aleppo_pine",
+		"tree5": "gaia/tree/carob",
+		"fruitBush": "gaia/fruit/berry_01",
+		"startingAnimal": "gaia/fauna_chicken",
+		"chicken": "gaia/fauna_chicken",
+		"fish": "gaia/fish/generic",
+		"mainHuntableAnimal": "gaia/fauna_deer",
+		"secondaryHuntableAnimal": "gaia/fauna_goat",
+		"stoneLarge": "gaia/rock/aegean_large",
+		"stoneSmall": "gaia/rock/aegean_small",
+		"metalLarge": "gaia/ore/aegean_anatolian_01",
+		"metalSmall": "gaia/ore/aegean_anatolian_small_01"
+	},
+	"Decoratives": {
+		"grass": "actor|props/flora/bush_medit_sm.xml",
+		"grassShort": "actor|props/flora/bush_medit_sm.xml",
+		"reeds": "actor|props/flora/reeds_pond_lush_b.xml",
+		"lillies": "actor|props/flora/water_lillies.xml",
+		"rockLarge": "actor|geology/stone_granite_large.xml",
+		"rockMedium": "actor|geology/stone_granite_med.xml",
+		"bushMedium": "actor|flora/bushes/medit_scrub_01.xml",
+		"bushSmall": "actor|flora/trees/lavender_bush_01.xml",
+		"tree": "actor|flora/trees/cypress_mediterranean_wild.xml"
+	},
+	"ResourceCounts": {
+		"trees": {
+			"min": 700,
+			"max": 3000,
+			"forestProbability": 0.6
+		}
+	}
+}

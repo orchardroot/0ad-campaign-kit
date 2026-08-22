@@ -1,0 +1,89 @@
+{
+	"Name": "(Millennium A.D.) Museum — A Tour of the Mod",
+	"Description": "Not a campaign. An index of the showcase and demo maps Millennium A.D. ships, so you can look at the mod's six factions without playing a match against any of them.\n\nREQUIRES the Millennium A.D. mod to be enabled, on its own: mod.enabledmods = \"mod public millenniumad\". None of these will launch in vanilla.\n\nNothing is gated and nothing has an opponent. Every entry launches straight into the map with no AI in any slot, deliberately — the game runs, there is just nobody else in it. Alt+D opens the developer overlay for changing perspective, and the usual cheats work if you want to spawn something and look at it properly.\n\nThe mod moves 0 A.D. forward to roughly AD 500–1000. Most of these maps are structure showcases, which tells you where the work went: Norse, Byzantine, Carolingian and Umayyad building sets, all new. The Anglo-Saxons and the Rus only turn up in the units demo.",
+	"Levels": {
+		"structures": {
+			"Name": "The Structure Sets",
+			"Map": "scenarios/millenniumad_structures.xml",
+			"MapType": "scenario",
+			"Description": "Building sets from several Millennium A.D. civilisations laid out together on one circular map.\n\nStart here. Seeing four architectural traditions side by side does more in two minutes than the four single-faction maps do in twenty, and afterwards you know which of them you actually want to look at closely.",
+			"useGameSetup": false
+		},
+		"byzantines": {
+			"Name": "Byzantine Structures",
+			"Map": "scenarios/millenniumad_byza.xml",
+			"MapType": "scenario",
+			"Description": "The Byzantine set on its own: the domes, the brickwork, the bits that are recognisably still Rome and the bits that plainly are not.\n\nThe most ornate roster in the mod and the one that most rewards zooming in.",
+			"useGameSetup": false
+		},
+		"carolingians": {
+			"Name": "Carolingian Structures",
+			"Map": "scenarios/millenniumad_caro.xml",
+			"MapType": "scenario",
+			"Description": "The Carolingian set — early medieval western Europe in timber and stone, which is a very long way from a Greek stoa.\n\nThis is the mod's answer to the question of what 0 A.D. looks like after the empire goes.",
+			"useGameSetup": false
+		},
+		"norse": {
+			"Name": "Norse Structures",
+			"Map": "scenarios/millenniumad_norse.xml",
+			"MapType": "scenario",
+			"Description": "Longhouses, wood, and an ocean water body the map author clearly cared about.\n\nThe Norse are the mod's flagship faction and get the most attention everywhere; this is their architecture with nothing else in the frame.",
+			"useGameSetup": false
+		},
+		"umayyads": {
+			"Name": "Umayyad Structures",
+			"Map": "scenarios/umayyads.xml",
+			"MapType": "scenario",
+			"Description": "The Umayyad Caliphate's building set — the one furthest from anything in the base game, and the reason to have installed this mod if you already own a dozen European ones.\n\nWorth the visit even if you never intend to play them.",
+			"useGameSetup": false
+		},
+		"outpost": {
+			"Name": "Carolingian Outpost",
+			"Map": "scenarios/Carolingian_Outpost.xml",
+			"MapType": "scenario",
+			"Description": "Not a parade of buildings but an actual Carolingian outpost, laid out as a settlement with its surrounding structures in sensible places.\n\nUseful in a way the showcase maps aren't: it shows you how the pieces are meant to fit together, which is a thing you can then copy in a real game.",
+			"useGameSetup": false
+		},
+		"norse_actors": {
+			"Name": "Norse Actors",
+			"Map": "scenarios/norse_actors.xml",
+			"MapType": "scenario",
+			"Description": "Norse unit and actor variants, which is the art-side view rather than the gameplay one — the same soldier in his several different shirts.\n\n0 A.D. varies unit appearance randomly so an army doesn't look stamped out. This is that machinery with the lid off.",
+			"useGameSetup": false
+		},
+		"units_demo": {
+			"Name": "Units Demo — All Six Factions",
+			"Map": "scenarios/units_demo_6p.xml",
+			"MapType": "scenario",
+			"Description": "Six players, one per faction — Anglo-Saxons, Byzantines, Carolingians, Norse, Rus and Umayyads — with a trigger script spawning their units and structures on a revealed map.\n\nThe only place the Anglo-Saxons and the Rus get a showcase of their own, so it's the one map here you shouldn't skip.",
+			"useGameSetup": false
+		},
+		"sandbox_norse": {
+			"Name": "Sandbox — The Norse",
+			"Map": "scenarios/sandbox_norse.xml",
+			"MapType": "scenario",
+			"Description": "A Norse settlement with twenty thousand of every resource in the bank and nobody coming. Also mission one of the Six Crowns course, and it earns the second appearance — this is the mod's world-builder in all but name.\n\nThe map's own description claims you'll be playing around with the Gallic faction, which is a copy-paste nobody ever went back and fixed. You will not be playing the Gauls.",
+			"useGameSetup": false
+		},
+		"stormy_water": {
+			"Name": "Stormy Water",
+			"Map": "scenarios/stormy_water_test.xml",
+			"MapType": "scenario",
+			"Description": "A showcase map by niektb, revealed from the start and openly labelled as not playable. Ocean, weather and two Norse coastlines.\n\nPure eyecandy. Open it, stop clicking, and watch the water for a minute.",
+			"useGameSetup": false
+		}
+	},
+	"Order": [
+		"structures",
+		"byzantines",
+		"carolingians",
+		"norse",
+		"umayyads",
+		"outpost",
+		"norse_actors",
+		"units_demo",
+		"sandbox_norse",
+		"stormy_water"
+	],
+	"ShowUnavailable": true
+}

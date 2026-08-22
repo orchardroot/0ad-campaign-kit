@@ -1,0 +1,100 @@
+{
+	"Description": {
+		"Title": "Halcyon Golden Hour",
+		"Description": "The sun sits an hour above the water and turns the whole sea to beaten copper. Cypress and olive stand black against the light on every headland, and the shoals run silver in the shallows. The wind has dropped; nothing moves but the boats."
+	},
+	"Environment": {
+		"SunColor": { "r": 1, "g": 0.78, "b": 0.42 },
+		"SunElevation": 0.22,
+		"SunRotation": -1.31922,
+		"AmbientColor": { "r": 0.32549, "g": 0.317647, "b": 0.376471 },
+		"Water": {
+			"WaterBody": {
+				"Color": { "r": 0.070588, "g": 0.192157, "b": 0.243137 },
+				"Tint": { "r": 0.925, "g": 0.686275, "b": 0.376471 },
+				"Murkiness": 0.62,
+				"Waviness": 2.5
+			}
+		},
+		"Postproc": {
+			"PostprocEffect": "hdr",
+			"Brightness": 0.02,
+			"Saturation": 1.08,
+			"Contrast": 1.05,
+			"Bloom": 0.22
+		}
+	},
+	"Terrains": {
+		"mainTerrain": [
+			"aegean_grass_02",
+			"aegean_grass_01",
+			"aegean_grass_dirt_01"
+		],
+		"forestFloor1": "aegean_forestfloor_01",
+		"forestFloor2": "medit_forestfloor_a",
+		"cliff": [
+			"aegean_cliff_seaside_01",
+			"aegean_cliff_01"
+		],
+		"tier1Terrain": [
+			"aegean_grass_dirt_01"
+		],
+		"tier2Terrain": [
+			"aegean_grass_03"
+		],
+		"tier3Terrain": [
+			"aegean_dirt_01"
+		],
+		"tier4Terrain": [
+			"medit_shrubs_golden"
+		],
+		"hill": [
+			"aegean_mountain_01",
+			"aegean_dirt_rocks_01"
+		],
+		"dirt": [
+			"aegean_dirt_01",
+			"aegean_rocks_grass_01"
+		],
+		"road": "aegean_paving_02",
+		"roadWild": "aegean_rocks_grass_01",
+		"shoreBlend": "aegean_sand_01",
+		"shore": "aegean_sand_01",
+		"water": "aegean_sand_02_wet"
+	},
+	"Gaia": {
+		"tree1": "gaia/tree/cypress",
+		"tree2": "gaia/tree/olive",
+		"tree3": "gaia/tree/carob",
+		"tree4": "gaia/tree/aleppo_pine",
+		"tree5": "gaia/tree/medit_fan_palm",
+		"fruitBush": "gaia/fruit/grapes",
+		"startingAnimal": "gaia/fauna_chicken",
+		"chicken": "gaia/fauna_chicken",
+		"fish": "gaia/fish/tuna",
+		"mainHuntableAnimal": "gaia/fauna_deer",
+		"secondaryHuntableAnimal": "gaia/fauna_goat",
+		"stoneLarge": "gaia/rock/mediterranean_large",
+		"stoneSmall": "gaia/rock/mediterranean_small",
+		"metalLarge": "gaia/ore/mediterranean_large",
+		"metalSmall": "gaia/ore/mediterranean_small"
+	},
+	"Decoratives": {
+		"grass": "actor|props/flora/bush_medit_sm.xml",
+		"grassShort": "actor|props/flora/bush_medit_sm.xml",
+		"reeds": "actor|props/flora/reeds_pond_lush_b.xml",
+		"lillies": "actor|props/flora/water_lillies.xml",
+		"rockLarge": "actor|geology/stone_granite_large.xml",
+		"rockMedium": "actor|geology/stone_granite_med.xml",
+		"bushMedium": "actor|flora/bushes/medit_scrub_01.xml",
+		"bushSmall": "actor|flora/trees/lavender_bush_01.xml",
+		"tree": "actor|flora/trees/cypress_mediterranean_wild.xml"
+	},
+	"ResourceCounts": {
+		"trees": {
+			"min": 700,
+			"max": 3000,
+			"forestProbability": 0.6
+		}
+	}
+}
