@@ -1,147 +1,169 @@
-# 0ad-island-warfare
+# 0 A.D. Campaign Kit
 
-Eight home-made campaigns for [0 A.D.](https://play0ad.com) Release 28 "Boiorix", four of them built on one stubborn conviction: the best way to play a real-time strategy game is from a boat.
+Ten campaigns, two maps, two tools and one piece of documentation for
+[0 A.D.](https://play0ad.com) **Release 28 "Boiorix"** — including courses for
+the two big overhaul mods, which ship almost no campaigns of their own.
 
-I'm a new-ish 0 A.D. player who kept picking the island maps, kept losing the sea, and kept wishing the game had a course that taught naval play instead of hoping you'd work it out under fire. So I wrote one. Then three more. Every mission puts each nation on its own island — nothing reaches you that didn't sail — and each level teaches exactly one idea before it unlocks the next.
-
-Also here: a cheat-sheet of every naval map I've found (vanilla + mods), with the settings for a game you can play with a cup of tea in the other hand.
-
-## The campaigns
-
-| Campaign | Missions | Difficulty | What it teaches |
-|---|---|---|---|
-| **Admiral's Course — Island Warfare** | 7, gated | Sandbox → Easy | The basics: docks, fishing, warship types, migration, sea control, beach defence, landings, and a free-for-all exam |
-| **Island Nations — One Nation, One Island** | 8, gated | Easy → Medium | Island empire-building: colonising empty islands, mining outposts, forward naval bases, FFA patience, wadeable fords, harbours, choosing your beach, and a four-way archipelago exam |
-| **Sea Powers — Wars of the Islands** | 7, open | Easy / Medium | Historical matchups on island maps, play in any order: Salamis, the Peloponnesian War, Tyre, the Balearics, the Punic War for Corsica, Cyprus, Britannia |
-| **Iron Admiral — Community Maps** | 6, gated | Medium | The big maps from [Community Maps 2](https://mod.io/g/0ad/m/community-maps-2): raiding, two-front wars, 3v3, Rapa Nui, and an eight-player Aegean finale |
-
-Suggested order: Admiral's Course → Island Nations → Iron Admiral, with Sea Powers whenever you fancy a story. Iron Admiral needs the free Community Maps 2 mod enabled; everything else is vanilla.
-
-### Mission lists
-
-<details>
-<summary><b>Admiral's Course</b> (<code>campaigns/island_warfare.json</code>)</summary>
-
-1. **Harbour Sandbox** — docks, fishing, warship types, transports (zero pressure)
-2. **The Fishing Fleet** — running an economy on fish and sea trade
-3. **The Crossing** — migration: ferry your civilisation to a new home
-4. **Rule the Waves** — winning sea control
-5. **Hold the Beach** — defending against amphibious assault
-6. **The Landing** — combined-arms landings with an AI ally
-7. **Admiral's Exam** — free-for-all archipelago graduation
-</details>
-
-<details>
-<summary><b>Island Nations</b> (<code>campaigns/island_nations.json</code>)</summary>
-
-1. **One Island Each** (Islands) — colonise a second island
-2. **The Cyclades** — mining outposts on empty islets
-3. **The Aegean Divide** — forward naval bases on mid-sea islands
-4. **Three Kings** (Islands, 3-way FFA) — let the AIs bleed each other first
-5. **The Searocks** (Snowflake Searocks, 2v2) — defend the fords, win at sea
-6. **Harbour Wars** (Harbor) — first Medium duel
-7. **Corsica against Sardinia** — picking the right beach
-8. **Thalassocracy** (Archipelago, 4-way FFA) — the exam
-</details>
-
-<details>
-<summary><b>Sea Powers</b> (<code>campaigns/sea_powers.json</code>)</summary>
-
-- **Salamis, 480 BC** — Athens vs Persia (Aegean Sea)
-- **Peloponnesian War, 431 BC** — Athens vs Sparta + Macedon (Cycladic Archipelago 3p)
-- **Tyre, 332 BC** — Macedon vs Persia (Islands)
-- **The Balearics, 240 BC** — Carthage vs Iberians (Islands)
-- **Punic War, 259 BC** — Carthage vs Rome (Corsica)
-- **Cyprus, 306 BC** — Ptolemies vs Seleucids (Harbor)
-- **Britannia, 55 BC** — Britons vs Rome (Northern Island)
-</details>
-
-<details>
-<summary><b>Iron Admiral</b> (<code>campaigns/iron_admiral.json</code>)</summary>
-
-1. **Coastline: The Raiders** — long shore, little wood, constant raiding
-2. **Volcanic Island** — the two-fleet system
-3. **Northern Islands: Two Fronts** (2v2) — a land border *and* a sea war
-4. **Caribbean Island** (3v3) — hold the mountain, be the team's navy
-5. **Rapa Nui: King of the Sea** — flank the fort by boat
-6. **Aegean Archipelago: The Great War** (4v4, 8 players) — the finale
-</details>
-
-## Also in here: two land campaigns
-
-Before the boats, there were these. They live in the same folder because they live in the same `user` mod, and because a campaign that only exists on one Mac is a campaign waiting to be lost.
-
-- **Boot Camp — Learning the Ropes** (`campaigns/bootcamp.json`) — eleven missions, gated. Starts with the two built-in tutorials, then a Roman sandbox, then a slow climb through first command, a duel, a siege defence, booming, aggression, a naval detour and a graduation. What I wish I'd been handed on day one.
-- **Great Battles of Antiquity** (`campaigns/great_battles.json`) — five hand-made scenarios from the base game, playable in any order: the Tiber, the Third Macedonian War, Migration, Death Canyon, Gold Rush.
-
-Neither needs a mod. Both are dry land, and I'm told some people prefer it.
-
-## And two for the overhaul mods
-
-The big total-conversion mods ship almost no campaigns between them — Millennium A.D. has none at all, and Delenda Est's single offering routes three of its fifteen levels through vanilla random maps, which its own author warns are unreliable in the mod. One of those sits at level five and gates everything after it.
-
-So: two more courses, same structure as the rest, skirmish maps only.
-
-- **(Delenda Est) Journey through the World — Rebuilt** (`campaigns/de_journey.json`) — ten missions, gated. Coin and Glory (the mod runs six resources, not four), choosing your Roman general, capturing mercenary camps, farming enriched ground, and a game with one of the twenty-odd factions the base game hasn't got. Finishes 3v3 on Two Seas.
-- **(Millennium A.D.) Six Crowns** (`campaigns/mad_six_crowns.json`) — ten missions, gated, AD 500–1000. One faction per mission for the first six — Norse, Anglo-Saxons, Byzantines, Carolingians, Umayyads, Rus — then free choice, a team game, and a finale in the deep forest. Uses all ten maps the mod ships.
-
-Campaign names are prefixed with the mod they need, because the `user` mod is always loaded and the campaign menu otherwise shows all eight side by side with nothing to tell you which is which. Use round brackets, not square ones — 0 A.D.'s GUI parses `[...]` as markup, so a `[Vanilla]` prefix throws "Invalid tag" on the campaign screen and gets swallowed instead of displayed. `(Vanilla)` ones run on the base game; the other two need their mod enabled **on its own**, not stacked with map packs.
+I'm a new-ish player who kept choosing the island maps, kept losing the sea, and
+kept wishing the game had a course that taught naval war instead of hoping I'd
+work it out under fire. So I wrote one. Then nine more, and by then I'd learned
+enough about the campaign format the hard way that it seemed worth writing down.
 
 ## Install
 
-Copy the campaigns into 0 A.D.'s always-loaded `user` mod:
-
 ```sh
-mkdir -p ~/Library/Application\ Support/0ad/mods/user/campaigns
-cp campaigns/*.json ~/Library/Application\ Support/0ad/mods/user/campaigns/
+git clone https://github.com/orchardroot/0ad-campaign-kit
+cd 0ad-campaign-kit
+./install.sh
 ```
 
-(Linux: `~/.local/share/0ad/mods/user/campaigns/`.) They then appear under **Single-player → Campaigns → New**.
+Campaigns go into the always-loaded `user` mod, and the maps install as a mod
+you enable in **Settings → Mod Selection**. Then **Single-player → Campaigns → New**.
 
-## How the missions work
+`--config` also installs my `local.cfg` (detailed tooltips, a game clock,
+building edge-snap, further camera zoom). `--dry-run` shows what it would do.
+`--uninstall` removes it again, leaving your saves and progress alone.
 
-Every mission opens the normal game-setup screen with the map locked in, and the mission description tells you the player count, teams and AI difficulty to set.
+macOS and Linux. On Windows, copy `campaigns/` to
+`%appdata%\0ad\mods\user\campaigns` and `mod/` to `%appdata%\0ad\mods\campaign-kit-maps`.
 
-That works because each level sets `"useGameSetup": true`. It's worth knowing what that flag does, because the campaign format is barely documented and the failure is silent: with it, the setup screen opens with the map locked *and Petra AI is assigned automatically to every non-human slot*, at whatever difficulty `gui.gamesetup.aidifficulty` holds. Without it, the level launches straight into the map with **no AI at all** — you get a map, an opponent slot, and nobody in it. Leave it off deliberately for tutorials and sandboxes; set it everywhere else.
+## Read the prefix
 
-Two other fields are not optional. `Order` must list every level key: the campaign menu sorts with `Order.indexOf(...)` and throws `TypeError: this.run.template.Order is undefined` without it, so the campaign won't open at all. `ShowUnavailable` lets you see the whole course from the start.
+Every campaign name starts with the mod it needs, because the `user` mod loads
+whatever else is enabled — so all ten always appear in the menu, whether or not
+the mod they depend on is switched on.
 
-Don't set `Preview` on a level at all. It looks like a convenience and it's a trap: the campaign menu builds a GUI sprite from it, and GUI sprites resolve under `art/textures/ui/`, so the value has to be the full `session/icons/mappreview/foo.png` path — *not* the bare `foo.png` that a map's own `settings.Preview` uses. Get it wrong and you get a magenta box. Omit the field entirely and `MapCache.getMapPreview()` reads the map's own declaration, prepends the right directory, and falls back to `nopreview.png`. It's self-maintaining and works for maps from any mod.
+| Prefix | Enable |
+|---|---|
+| **(Vanilla)** | nothing — base game |
+| **(Delenda Est)** | `mod public 0ad_delenda_est_r28`, on its own |
+| **(Millennium A.D.)** | `mod public millenniumad`, on its own |
 
-One more trap, since campaign names are displayed through the GUI's markup parser: never put square brackets in a campaign or level name. `[...]` is tag syntax, so a `[Vanilla]` prefix throws "Invalid tag" and gets swallowed rather than shown. Round brackets are fine.
+**Total conversions must be enabled alone** — not stacked with map packs, and
+never with each other. They delete vanilla content wholesale, and load order is
+last-wins, so two of them together means the second quietly guts the first.
+`tools/audit-mods.py` will tell you exactly what a given mod set breaks.
 
-Gating uses `Requires`, with `ShowUnavailable` so you can see the whole course from the start and know what you're working towards.
+## The campaigns
 
-## The cheat-sheet
+### Vanilla — the naval course
 
-[`docs/island-maps-cheatsheet.md`](docs/island-maps-cheatsheet.md) — every ship-friendly map in vanilla 0 A.D. and the mod.io map packs, which campaign missions use them, and settings recipes ranging from "totally chill boat-building afternoon" to "eight players, let chaos reign".
+| Campaign | Missions | Difficulty | What it teaches |
+|---|---|---|---|
+| **Admiral's Course — Island Warfare** | 7, gated | Sandbox → Easy | Docks, fishing, warship types, migration, sea control, beach defence, landings, and a free-for-all exam |
+| **Island Nations — One Nation, One Island** | 8, gated | Easy → Medium | Colonising empty islands, mining outposts, forward naval bases, FFA patience, fords, harbours, choosing your beach |
+| **Sea Powers — Wars of the Islands** | 7, open | Easy / Medium | Historical matchups, any order: Salamis, the Peloponnesian War, Tyre, the Balearics, Corsica, Cyprus, Britannia |
+| **Iron Admiral — Community Maps** | 6, gated | Medium | The big maps from [Community Maps 2](https://mod.io/g/0ad/m/community-maps-2): raiding, two fronts, 3v3, Rapa Nui, an eight-player finale |
+
+Order: Admiral's Course → Island Nations → Iron Admiral, with Sea Powers
+whenever you fancy a story. Iron Admiral needs Community Maps 2.
+
+### Vanilla — dry land
+
+| Campaign | Missions | What it is |
+|---|---|---|
+| **Boot Camp — Learning the Ropes** | 11, gated | What I wish I'd been handed on day one. The two built-in tutorials, a sandbox, then first command, a duel, a siege defence, booming, aggression, a naval detour, graduation |
+| **Great Battles of Antiquity** | 5, open | The base game's hand-made scenarios: the Tiber, the Third Macedonian War, Migration, Death Canyon, Gold Rush |
+
+### Delenda Est
+
+| Campaign | Missions | What it is |
+|---|---|---|
+| **Journey through the World — Rebuilt** | 10, gated | A course in the mod's own systems rather than a map tour: Coin and Glory, choosing your Roman general, capturing mercenary camps, farming enriched ground, a game as one of the factions the base game hasn't got |
+| **Museum — A Tour of the Mod** | 13, open | Unit portraits, the hero roster, ship combat, formation testing, Napata and Noba reconstructions, Roman eyecandy. No opponents — for looking, not fighting |
+
+[Delenda Est](https://github.com/JustusAvramenko/delenda_est) ships one campaign,
+and it routes three of its fifteen levels through vanilla random maps its own
+author warns are unreliable in the mod — one of them at level five, gating
+everything after it. Rebuilt uses skirmish maps only.
+
+### Millennium A.D.
+
+| Campaign | Missions | What it is |
+|---|---|---|
+| **Six Crowns** | 10, gated | One faction per mission for the first six — Norse, Anglo-Saxons, Byzantines, Carolingians, Umayyads, Rus — then free choice, a team game, and a finale in the deep forest. Uses all ten maps the mod ships |
+| **Museum — A Tour of the Mod** | 10, open | The four per-faction structure showcases, the units demo, the Norse sandbox |
+
+[Millennium A.D.](https://github.com/0ADMods/millenniumad) ships no campaigns at all.
+
+## The maps
+
+`mod/` installs as **Campaign Kit Maps**. Both are random maps, so they take any
+size and player count.
+
+**Halcyon** — a golden-hour archipelago, 2–8 players. Every nation gets its own
+island; nothing reaches you that didn't sail. Home islands carry only their
+starting mines, and nearly all the stone and metal sits on contested mid-sea
+islets, deliberately offset from the player lanes so nobody owns one by default.
+Fish are generous, because a naval economy should be viable. Three biomes:
+**Golden Hour**, **Squall**, **Moonlight**.
+
+**The Narrows** — two shores split by a navigable strait, 2–6 players, allies on
+the same side. Mainland metal is thin and every mid-channel islet has three
+mines, so holding the water has a concrete payoff rather than a notional one.
+Built for the sea-control lesson.
 
 ## Tools
 
 ```sh
-tools/validate-campaigns.py            # lint every campaign in campaigns/
-tools/validate-campaigns.py --installed  # treat missing maps as errors, not warnings
+tools/validate-campaigns.py               # lint every campaign
+tools/validate-campaigns.py --installed   # missing maps are errors, not warnings
+
+tools/audit-mods.py                       # what does my current mod set break?
+tools/audit-mods.py --mods "mod public 0ad_delenda_est_r28"
 ```
 
-Checks the things that fail silently: missing `Order`, missing `useGameSetup`,
-square brackets in names, bare-filename `Preview` values, dangling `Requires`,
-gating cycles, and map references that don't resolve against the base game plus
-whatever mods are installed. Exits non-zero on any error, so it works as a
-pre-commit hook.
+**`validate-campaigns.py`** catches the things that fail silently: a missing
+`Order`, a missing `useGameSetup`, square brackets in a name, a bare-filename
+`Preview`, dangling `Requires`, gating cycles, and map references that don't
+resolve against the base game plus your installed mods. Exits non-zero, so it
+works as a pre-commit hook.
 
-Written after four separate silent failures in one afternoon. The reasoning
-behind each check is in [`docs/campaign-format.md`](docs/campaign-format.md),
-which documents the parts of the campaign format that aren't written down
-anywhere else.
+**`audit-mods.py`** resolves the virtual filesystem for a mod chain — honouring
+load order and `.DELETED` masking — and reports which missions survive it. Pass
+`--mods` to test a chain you haven't committed to yet. It also warns when two
+total conversions are enabled together and tells you which one wins.
 
-`config/local.cfg` is my 0 A.D. config — detailed tooltips, a game clock,
-building edge-snap, a further camera zoom, and a commented-out performance
-block for older hardware. Drop it in `~/Library/Application Support/0ad/config/`.
+For the record, on my machine: Delenda Est ships **285 `.DELETED` markers** and
+breaks **11 of the 44 vanilla missions** here, including all five Great Battles.
+That's by design, not a fault. It's also exactly the sort of thing you'd rather
+find out from a tool than from a loading screen.
+
+## Documentation
+
+**[`docs/campaign-format.md`](docs/campaign-format.md)** — the campaign format
+and the bits nobody wrote down. The system is officially experimental and barely
+documented, and it fails silently in at least five interesting ways: `Order` is
+mandatory or the menu throws; `useGameSetup` is what gives you an opponent, and
+without it your enemy slot is simply empty; square brackets in a name are parsed
+as GUI markup and swallowed; `Preview` takes a different value here than it does
+in a map file; and scenario maps launched directly get no AI either. Every claim
+is cited to the relevant file inside `public.zip`.
+
+**[`docs/island-maps-cheatsheet.md`](docs/island-maps-cheatsheet.md)** — every
+ship-friendly map I've found, vanilla and modded, with settings ranging from
+"boat-building afternoon" to "eight players, let chaos reign".
+
+## How the missions work
+
+Each mission opens the normal game-setup screen with the map locked in, and the
+description tells you the player count, teams and AI difficulty to set. That
+works because every level sets `"useGameSetup": true`, which also assigns Petra
+AI to each non-human slot at your configured difficulty. Levels that should have
+no opponent say `"useGameSetup": false` explicitly — the game treats false and
+absent identically, so the difference is intent, which is what the linter reads.
+
+Gating uses `Requires`, with `ShowUnavailable` so you can see the whole course
+from the start and know what you're working towards.
 
 ## Contributing
 
-If you know a good island map I've missed, or a mission that would teach something these don't, open an issue or a PR. Campaign files are plain JSON — the hardest part is the prose.
+Campaign files are plain JSON — the hardest part is the prose. If you know a
+good island map I've missed, or a mission that would teach something these
+don't, open an issue or a PR. Run `tools/validate-campaigns.py` first and it'll
+catch the silent ones.
 
 ---
 
-*orchardroot — made in Cheshire, a long way from the sea, under the supervision of two cats.*
+*orchardroot — made in Cheshire, a long way from the sea, under the supervision
+of two cats.*
